@@ -23,12 +23,11 @@ __docformat__ = 'google'
 
 import random
 from typing import List, NewType, Tuple, Union, Optional
-from flib import attrib
-from pandb.core import record
-from nemoa.math import operator, stype
+from flib import attrib, operator, stype
 from flib.errors import InvalidTypeError, UserError
 from flib.types import StrList, StrTuple, OptIntList, OptOp, Callable, OptInt
 from flib.types import OptStr, Iterator, Mapping, SeqOp, AnyOp, OptType, BoolOp
+from pandb.core import record
 
 #
 # Exceptions
@@ -124,7 +123,7 @@ class Cursor(attrib.Group):
             :class:`tuple` and :class:`dict`. The default type of the returned
             records depends on the variable definitions. If no variables are
             defined, the records by default are returned as instances of the
-            :class:`Record class <nemoa.db.record.Record>`, if variables are
+            :class:`Record class <pandb.core.record.Record>`, if variables are
             defined, then the records by default are returned as tuples.
 
     """

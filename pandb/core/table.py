@@ -23,13 +23,11 @@ __docformat__ = 'google'
 
 import types
 from typing import Any, NewType, Tuple, List, Optional, Iterator, Union
-from flib import attrib, check, abc
-from pandb.core import record, cursor
+from flib import abc, attrib, check, stype
 from flib.errors import RowLookupError, ProxyError, InvalidTypeError
-from nemoa.math import stype
 from flib.types import StrList, StrTuple, OptOp, SeqOp, OptType
-from flib.types import OptStrTuple, OptInt, OptStr
-from flib.types import Mapping, OptMapping
+from flib.types import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
+from pandb.core import record, cursor
 
 #
 # Structural Types
@@ -116,7 +114,7 @@ class Table(attrib.Group):
     :class:`MappingProxy <types.MappingProxyType>`. Individual entries can be
     accessed and changed by the methods :meth:`.get_metadata` and
     :meth:`.set_metadata`. This attribute is not used by the :class:`Table class
-    <nemoa.db.table.Table>` itself, but intended for data integration by
+    <pandb.core.table.Table>` itself, but intended for data integration by
     third-party extensions.
     """
 
@@ -394,8 +392,8 @@ class Table(attrib.Group):
             batchsize: OptInt = None, mode: OptStr = None) -> cursor.Cursor:
         """Get cursor on a specified result set of records from table.
 
-        This method is motivated by the SQL `SELECT`_ statement and creates
-        a :class:`Cursor class <nemoa.db.table.Cursor>` instance with specified
+        This method is motivated by the SQL `SELECT`_ statement and creates a
+        :class:`Cursor class <pandb.core.table.Cursor>` instance with specified
         properties.
 
         Args:
@@ -427,8 +425,8 @@ class Table(attrib.Group):
                 the result set is returned as a list of tuples.
             batchsize: Integer, that specifies the default number of rows which
                 is to be fetched by the method :meth:`Cursor.fetch
-                <nemoa.table.Cursor.fetch>`. It defaults to 1, meaning to fetch
-                a single row at a time. Whether and which batchsize to use
+                <pandb.core.cursor.Cursor.fetch>`. It defaults to 1, meaning to
+                fetch a single row at a time. Whether and which batchsize to use
                 depends on the application and should be considered with care.
                 The batchsize can also be adapted during the lifetime of the
                 cursor, which allows dynamic performance optimization.
@@ -437,7 +435,7 @@ class Table(attrib.Group):
                 initializing the curser, it's mode can not be changed anymore.
 
         Returns:
-            New instance of :class:`Cursor class <nemoa.db.table.Cursor>` on
+            New instance of :class:`Cursor class <pandb.core.cursor.Cursor>` on
             on a specified result set from the table.
 
         .. _SELECT: https://en.wikipedia.org/wiki/Select_(SQL)

@@ -24,7 +24,7 @@ __docformat__ = 'google'
 from typing import Any
 from flib import attrib
 from pandb.core import table
-from nemoa.io import csv, ini
+from flib.io import csv, ini
 from flib.types import FileRef
 from flib.errors import ConnectError, DisconnectError
 
@@ -60,7 +60,7 @@ class Table(table.Proxy):
         Args:
             file:
             *args: Additional arguments, that are passed to
-                :class:`csv.File <nemoa.io.csv.File>`.
+                :class:`csv.File <flib.io.csv.File>`.
             **kwds: Additional keyword arguments, that are passed to csv.File.
 
         """

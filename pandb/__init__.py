@@ -16,9 +16,9 @@
 #
 """Pandora database proxy."""
 
-__version__ = '0.0.4'
+__version__ = '0.0.5'
 __license__ = 'GPLv3'
-__copyright__ = 'Copyright 2013-2019, Patrick Michl'
+__copyright__ = 'Copyright 2019, Patrick Michl'
 __organization__ = 'frootlab'
 __author__ = 'frootlab'
 __email__ = 'frootlab@gmail.com'

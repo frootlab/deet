@@ -13,7 +13,7 @@
 #  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 #  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #  You should have received a copy of the GNU General Public License along with
-#  nemoa. If not, see <http://www.gnu.org/licenses/>.
+#  pandora. If not, see <http://www.gnu.org/licenses/>.
 #
 """Setuptools based installation."""
 
@@ -42,7 +42,7 @@ def install() -> None:
     # Update package variables from package init
     pkg_vars = get_vars()
 
-    # Install nemoa package
+    # Install package
     setuptools.setup(
         name='pandb',
         version=pkg_vars['version'],
@@ -72,7 +72,8 @@ def install() -> None:
             'pandb': 'pandb'},
         python_requires='>=3.7',
         install_requires=[
-            'numpy>=1.15']
+            'numpy>=1.15',
+            'flib>=0.1.5']
     )
 
 if __name__ == '__main__':
