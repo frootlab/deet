@@ -29,4 +29,3 @@ from pandb.core import table
 
 class Table(table.Proxy):
     """SQL-Table Proxy."""
-    pass

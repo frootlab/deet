@@ -26,21 +26,17 @@ import pathlib
 import re
 import setuptools
 
-def get_vars() -> dict:
-    """Get module variables from file 'pandb/__init__.py'."""
+def install() -> None:
+    """Setuptools based installation script."""
+
+    #Get module variables from file 'pandb/__init__.py'
     text = pathlib.Path('./pandb/__init__.py').read_text()
     rekey = "__([a-zA-Z][a-zA-Z0-9_]*)__"
     reval = r"['\"]([^'\"]*)['\"]"
     pattern = f"^[ ]*{rekey}[ ]*=[ ]*{reval}"
-    dvars = {}
+    pkg_vars = {}
     for mo in re.finditer(pattern, text, re.M):
-        dvars[str(mo.group(1))] = str(mo.group(2))
-    return dvars
-
-def install() -> None:
-    """Setuptools based installation script."""
-    # Update package variables from package init
-    pkg_vars = get_vars()
+        pkg_vars[str(mo.group(1))] = str(mo.group(2))
 
     # Install package
     setuptools.setup(
@@ -59,10 +55,10 @@ def install() -> None:
             'Topic :: Database :: Database Engines/Servers',
             'Topic :: Software Development :: Libraries :: Python Modules'],
         keywords=(
-            "database "
-            "database-proxy "
-            "orm-framework "
-            "data-warehouse "),
+            'database '
+            'database-proxy '
+            'orm-framework '
+            'data-warehouse '),
         url='https://frootlab.github.io/pandora',
         author=pkg_vars['author'],
         author_email=pkg_vars['email'],
@@ -72,8 +68,9 @@ def install() -> None:
             'pandb': 'pandb'},
         python_requires='>=3.7',
         install_requires=[
+            'flib>=0.1.7',
             'numpy>=1.15',
-            'flib>=0.1.5']
+            'SQLAlchemy>=1.2.17']
     )
 
 if __name__ == '__main__':
