@@ -14,8 +14,28 @@
 #  You should have received a copy of the GNU General Public License along with
 #  pandora. If not, see <http://www.gnu.org/licenses/>.
 #
+"""Table Proxy for Microsoft Excel Office Open XML Files."""
 
 __author__ = 'Patrick Michl'
 __email__ = 'frootlab@gmail.com'
 __license__ = 'GPLv3'
 __docformat__ = 'google'
+
+try:
+    import openpyxl
+except ImportError as err:
+    raise ImportError(
+        "requires package openpyxl: "
+        "https://pypi.org/project/openpyxl") from err
+
+from flib import attrib
+from pandb.core import table
+
+#
+# Classes
+#
+
+class Table(table.Proxy):
+    """Excel-Table Proxy."""
+
+    _file: property = attrib.Temporary()

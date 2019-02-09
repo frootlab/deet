@@ -14,8 +14,19 @@
 #  You should have received a copy of the GNU General Public License along with
 #  pandora. If not, see <http://www.gnu.org/licenses/>.
 #
+"""Table Proxy Classes."""
 
 __author__ = 'Patrick Michl'
 __email__ = 'frootlab@gmail.com'
 __license__ = 'GPLv3'
 __docformat__ = 'google'
+
+from pandb.core import table
+
+#
+# Classes
+#
+
+class Table(table.Proxy):
+    """SQL-Table Proxy."""
+    pass

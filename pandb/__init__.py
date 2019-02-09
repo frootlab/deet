@@ -3,20 +3,20 @@
 #
 # This file is part of pandora, https://frootlab.github.io/pandora
 #
-#  nemoa is free software: you can redistribute it and/or modify it under the
+#  pandora is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
 #  Foundation, either version 3 of the License, or (at your option) any later
 #  version.
 #
-#  nemoa is distributed in the hope that it will be useful, but WITHOUT ANY
+#  pandora is distributed in the hope that it will be useful, but WITHOUT ANY
 #  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 #  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #  You should have received a copy of the GNU General Public License along with
-#  nemoa. If not, see <http://www.gnu.org/licenses/>.
+#  pandora. If not, see <http://www.gnu.org/licenses/>.
 #
 """Pandora database proxy."""
 
-__version__ = '0.0.2'
+__version__ = '0.0.4'
 __license__ = 'GPLv3'
 __copyright__ = 'Copyright 2013-2019, Patrick Michl'
 __organization__ = 'frootlab'
