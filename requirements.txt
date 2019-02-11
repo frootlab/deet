@@ -1,0 +1,6 @@
+numpy>=1.15
+SQLAlchemy>=1.2.17
+appdirs>=1.4.1
+pyparsing>=2.2
+flib>=0.1.7
+iolib>=0.0.3

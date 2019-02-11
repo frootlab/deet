@@ -69,6 +69,7 @@ def install() -> None:
         python_requires='>=3.7',
         install_requires=[
             'flib>=0.1.7',
+            'iolib>=0.0.3',
             'numpy>=1.15',
             'SQLAlchemy>=1.2.17']
     )

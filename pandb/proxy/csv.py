@@ -23,10 +23,10 @@ __docformat__ = 'google'
 
 from typing import Any
 from flib import attrib
-from pandb.core import table
-from flib.io import csv, ini
 from flib.types import FileRef
 from flib.errors import ConnectError, DisconnectError
+from iolib import csv, ini
+from pandb.core import table
 
 #
 # CSV Table Proxy Class
