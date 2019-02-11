@@ -23,9 +23,9 @@ __docformat__ = 'google'
 
 from typing import Any
 from flib import attrib
-from flib.types import FileRef
 from flib.errors import ConnectError, DisconnectError
 from iolib import csv, ini
+from iolib import FileRef
 from pandb.core import table
 
 #
