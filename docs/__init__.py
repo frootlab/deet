@@ -14,14 +14,8 @@
 #  You should have received a copy of the GNU General Public License along with
 #  pandora. If not, see <http://www.gnu.org/licenses/>.
 #
-"""Pandora database proxy."""
 
-__version__ = '0.0.8'
-__license__ = 'GPLv3'
-__copyright__ = 'Copyright (c) 2019 Patrick Michl'
-__organization__ = 'frootlab'
-__author__ = 'frootlab'
+__author__ = 'Patrick Michl'
 __email__ = 'frootlab@gmail.com'
-__maintainer__ = 'Patrick Michl'
-__authors__ = ['Patrick Michl <patrick.michl@gmail.com>']
+__license__ = 'GPLv3'
 __docformat__ = 'google'
