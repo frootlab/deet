@@ -68,8 +68,8 @@ def install() -> None:
             'pandb': 'pandb'},
         python_requires='>=3.7',
         install_requires=[
-            'flib>=0.1.7',
-            'iolib>=0.0.3',
+            'flib>=0.1.13',
+            'iolib>=0.1.1',
             'numpy>=1.15',
             'SQLAlchemy>=1.2.17']
     )

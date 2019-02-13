@@ -25,7 +25,7 @@ from typing import Any
 from flib import attrib
 from flib.errors import ConnectError, DisconnectError
 from iolib import csv, ini
-from iolib import FileRef
+from iolib import FileRef, FileRefClassInfo
 from pandb.core import table
 
 #
@@ -47,7 +47,7 @@ class Table(table.Proxy):
     # Protected Attributes
     #
 
-    _fileref: property = attrib.Temporary(dtype=csv.FileRefClasses)
+    _fileref: property = attrib.Temporary(dtype=FileRefClassInfo)
     _file: property = attrib.Temporary(dtype=csv.File)
 
     #
