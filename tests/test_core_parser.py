@@ -22,9 +22,9 @@ __license__ = 'GPLv3'
 __docformat__ = 'google'
 
 from pandb.core import parser
-from flib.types import AnyOp
-from flib import test
-from flib.test import Case
+from flab.base.types import AnyOp
+from flab.base import test
+from flab.base.test import Case
 
 #
 # Test Cases

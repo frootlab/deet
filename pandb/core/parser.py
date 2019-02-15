@@ -31,8 +31,8 @@ import random
 from typing import Any, Sequence, Union
 import uuid
 import numpy as np
-from flib import parser, phonetic
-from flib.parser import Symbol, UNARY, BINARY, FUNCTION, CONSTANT
+from flab.base import parser, phonetic
+from flab.base.parser import Symbol, UNARY, BINARY, FUNCTION, CONSTANT
 from pandb.core import dtype
 
 #

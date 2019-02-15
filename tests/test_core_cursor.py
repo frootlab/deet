@@ -24,8 +24,8 @@ __docformat__ = 'google'
 import string
 from typing import Any
 from pandb.core import cursor, record, table
-from flib.types import StrList
-from flib import test
+from flab.base.types import StrList
+from flab.base import test
 
 #
 # Test Cases

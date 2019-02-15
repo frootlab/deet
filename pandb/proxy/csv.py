@@ -22,10 +22,10 @@ __license__ = 'GPLv3'
 __docformat__ = 'google'
 
 from typing import Any
-from flib import attrib
-from flib.errors import ConnectError, DisconnectError
-from iolib import csv, ini
-from iolib import FileRef, FileRefClassInfo
+from flab.base import attrib
+from flab.errors import ConnectError, DisconnectError
+from flab.io import csv, ini
+from flab.io import FileRef, FileRefClassInfo
 from pandb.core import table
 
 #
@@ -60,7 +60,7 @@ class Table(table.Proxy):
         Args:
             file:
             *args: Additional arguments, that are passed to
-                :class:`csv.File <flib.io.csv.File>`.
+                :class:`csv.File <flab.base.io.csv.File>`.
             **kwds: Additional keyword arguments, that are passed to csv.File.
 
         """

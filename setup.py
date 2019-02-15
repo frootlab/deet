@@ -68,10 +68,11 @@ def install() -> None:
             'pandb': 'pandb'},
         python_requires='>=3.7',
         install_requires=[
-            'flib>=0.1.13',
-            'iolib>=0.1.1',
             'numpy>=1.15',
-            'SQLAlchemy>=1.2.17']
+            'SQLAlchemy>=1.2.17',
+            'flab-errors>=0.0.2',
+            'flab-base>=0.1.17',
+            'flab-io>=0.1.4']
     )
 
 if __name__ == '__main__':

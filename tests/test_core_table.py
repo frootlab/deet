@@ -22,7 +22,7 @@ __license__ = 'GPLv3'
 __docformat__ = 'google'
 
 from typing import Any
-from flib import test
+from flab.base import test
 from pandb.core import table
 
 #

@@ -23,9 +23,9 @@ __docformat__ = 'google'
 
 import dataclasses
 from pandb.core import record
-from flib.types import AnyOp
-from flib import test
-from flib.test import Case
+from flab.base.types import AnyOp
+from flab.base import test
+from flab.base.test import Case
 
 #
 # Test Cases

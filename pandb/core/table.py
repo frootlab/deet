@@ -23,10 +23,10 @@ __docformat__ = 'google'
 
 import types
 from typing import Any, NewType, Tuple, List, Optional, Iterator, Union
-from flib import abc, attrib, check, stype
-from flib.errors import RowLookupError, ProxyError, InvalidTypeError
-from flib.types import StrList, StrTuple, OptOp, SeqOp, OptType
-from flib.types import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
+from flab.base import abc, attrib, check, stype
+from flab.errors import RowLookupError, ProxyError, InvalidTypeError
+from flab.base.types import StrList, StrTuple, OptOp, SeqOp, OptType
+from flab.base.types import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
 from pandb.core import record, cursor
 
 #
@@ -96,7 +96,7 @@ class Table(attrib.Group):
             This does not comprise metadata of the fields, which has to be
             included within the field declarations.
         parent: Reference to parent :class:`attribute group
-            <flib.attrib.Group>`, which is used for inheritance and
+            <flab.base.attrib.Group>`, which is used for inheritance and
             shared attributes. By default no parent is referenced.
 
     """
@@ -605,7 +605,7 @@ class Proxy(Table, abc.Proxy):
         proxy_mode: Optional Integer, that determines the operation mode of the
             proxy.
         parent: Reference to parent :class:`attribute group
-            <flib.attrib.Group>`, which is used for inheritance and
+            <flab.base.attrib.Group>`, which is used for inheritance and
             shared attributes. By default no parent is referenced.
 
     """
