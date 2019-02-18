@@ -21,10 +21,11 @@ __email__ = 'frootlab@gmail.com'
 __license__ = 'GPLv3'
 __docformat__ = 'google'
 
+from typing import Any
 from flib.base import pkg
 from pandb.core import table
 from flib.errors import ConnectError
-from flib.base.types import Any, Module
+from flib.typing import Module
 
 #
 # Constructors

@@ -23,10 +23,10 @@ __docformat__ = 'google'
 
 import types
 from typing import Any, NewType, Tuple, List, Optional, Iterator, Union
-from flib.base import abc, attrib, check, stype
+from flib.base import abc, attrib, stype
 from flib.errors import RowLookupError, ProxyError, InvalidTypeError
-from flib.base.types import StrList, StrTuple, OptOp, SeqOp, OptType
-from flib.base.types import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
+from flib.typing import check, StrList, StrTuple, OptOp, SeqOp, OptType
+from flib.typing import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
 from pandb.core import record, cursor
 
 #

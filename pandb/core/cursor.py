@@ -25,8 +25,8 @@ import random
 from typing import List, NewType, Tuple, Union, Optional
 from flib.base import attrib, operator, stype
 from flib.errors import InvalidTypeError, UserError
-from flib.base.types import StrList, StrTuple, OptIntList, OptOp, Callable, OptInt
-from flib.base.types import OptStr, Iterator, Mapping, SeqOp, AnyOp, OptType, BoolOp
+from flib.typing import StrList, StrTuple, OptIntList, OptOp, Callable, OptInt
+from flib.typing import OptStr, Iterator, Mapping, SeqOp, AnyOp, OptType, BoolOp
 from pandb.core import record
 
 #

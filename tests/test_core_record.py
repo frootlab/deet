@@ -23,7 +23,7 @@ __docformat__ = 'google'
 
 import dataclasses
 from pandb.core import record
-from flib.base.types import AnyOp
+from flib.typing import AnyOp
 from flib.base import test
 from flib.base.test import Case
 

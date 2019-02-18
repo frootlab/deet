@@ -46,7 +46,7 @@ __docformat__ = 'google'
 from typing import Any
 from abc import ABC, abstractmethod
 from flib.base import attrib, errors
-from flib.base.types import OptList, OptInt, OptBool
+from flib.typing import OptList, OptInt, OptBool
 
 #
 # DB-API 2.0 Exceptions

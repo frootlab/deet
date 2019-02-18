@@ -71,8 +71,9 @@ def install() -> None:
             'numpy>=1.15',
             'SQLAlchemy>=1.2.17',
             'flib-errors>=0.0.4',
-            'flib-base>=0.1.18',
-            'flib-io>=0.1.6']
+            'flib-typing>=0.0.1',
+            'flib-base>=0.1.20',
+            'flib-io>=0.1.7']
     )
 
 if __name__ == '__main__':

@@ -26,9 +26,8 @@ import contextlib
 import itertools
 import dataclasses
 from typing import Any, Union, Tuple, Type
-from flib.base import check
 from flib.errors import InvalidTypeError
-from flib.base.types import StrDict, StrList, void, OptOp, TypeHint
+from flib.typing import check, StrDict, StrList, void, OptOp, TypeHint
 
 #
 # Structural Types
