@@ -1,28 +1,25 @@
 Glossary
 ========
 
-Database Engine Glossary
-~~~~~~~~~~~~~~~~~~~~~~~~
-
 .. glossary::
 
     Row Like
 
         *Row like* data comprises different data formats, which are used to
         represent table records. This includes tuples, mappings and instances of
-        the :class:`Record class <nemoa.db.table.Record>`. The :class:`Table
-        class <nemoa.db.table.Table>` accepts these data types for appending
-        rows by :meth:`~nemoa.db.table.Table.insert` and for retrieving rows by
-        :meth:`~nemoa.db.table.Table.select`.
+        the :class:`Record class <pandb.core.table.Record>`. The :class:`Table
+        class <pandb.core.table.Table>` accepts these data types for appending
+        rows by :meth:`~pandb.core.table.Table.insert` and for retrieving rows
+        by :meth:`~pandb.core.table.Table.select`.
 
     Cursor Mode
 
         The *cursor mode* defines the *scrolling type* and the *operation mode*
-        of a cursor. Internally the respective parameters of the
-        :class:`Cursor class <nemoa.db.table.Cursor>` are identified by binary
-        flags. The public interface uses a string representation, given by
-        the space separated names of the scrolling type and the the operation
-        mode. Supported scrolling types are:
+        of a cursor. Internally the respective parameters of the :class:`Cursor
+        class <pandb.core.table.Cursor>` are identified by binary flags. The
+        public interface uses a string representation, given by the space
+        separated names of the scrolling type and the the operation mode.
+        Supported scrolling types are:
 
         :forward-only: The default scrolling type of cursors is called a
             forward-only cursor and can move only forward through the result
@@ -56,10 +53,10 @@ Database Engine Glossary
             order. Keyset driven cursors are thread-safe but do not support
             sorting rows or counting filtered rows.
         :static: Static cursors are buffered and built during it's creation time
-            and therefore always display the result set as it was when the cursor
-            was first opened. Static cursors are not thread-safe but support
-            counting the rows with respect to a given filter and sorting the
-            rows.
+            and therefore always display the result set as it was when the
+            cursor was first opened. Static cursors are not thread-safe but
+            support counting the rows with respect to a given filter and sorting
+            the rows.
 
     Aggregation Function
 

@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2019 Patrick Michl
+# Copyright (c) 2019 Frootlab Developers
 #
-# This file is part of pandora, https://frootlab.github.io/pandora
+# This file is part of Pandora, https://frootlab.github.io/pandora
 #
-#  pandora is free software: you can redistribute it and/or modify it under the
+#  Pandora is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
 #  Foundation, either version 3 of the License, or (at your option) any later
 #  version.
 #
-#  pandora is distributed in the hope that it will be useful, but WITHOUT ANY
+#  Pandora is distributed in the hope that it will be useful, but WITHOUT ANY
 #  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 #  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #  You should have received a copy of the GNU General Public License along with
-#  pandora. If not, see <http://www.gnu.org/licenses/>.
+#  Pandora. If not, see <http://www.gnu.org/licenses/>.
 #
 """Cursor Class."""
 
@@ -23,10 +23,10 @@ __docformat__ = 'google'
 
 import random
 from typing import List, NewType, Tuple, Union, Optional
-from flab.base import attrib, operator, stype
-from flab.errors import InvalidTypeError, UserError
-from flab.base.types import StrList, StrTuple, OptIntList, OptOp, Callable, OptInt
-from flab.base.types import OptStr, Iterator, Mapping, SeqOp, AnyOp, OptType, BoolOp
+from flib.base import attrib, operator, stype
+from flib.errors import InvalidTypeError, UserError
+from flib.base.types import StrList, StrTuple, OptIntList, OptOp, Callable, OptInt
+from flib.base.types import OptStr, Iterator, Mapping, SeqOp, AnyOp, OptType, BoolOp
 from pandb.core import record
 
 #
@@ -117,7 +117,7 @@ class Cursor(attrib.Group):
             order is ascending with respect to given column names in the
             orderby parameter, for ``True`` it is descending.
         parent: Reference to parent :class:'attribute group
-            <flab.base.attrib.Group>', which is used for inheritance and
+            <flib.base.attrib.Group>', which is used for inheritance and
             shared attributes. By default no parent is referenced.
         dtype: Optional type of the returned records. Supported types are
             :class:`tuple` and :class:`dict`. The default type of the returned

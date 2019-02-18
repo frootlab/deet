@@ -6,12 +6,13 @@ Pandora
 
    Introduction <instroduction>
    Installation <install>
-   :ref:`modindex`
+   API Reference <api/pandb>
    Glossary <glossary>
    License <license>
 
-Indices
--------
+Index
+-----
 
 * :ref:`genindex`
+* :ref:`modindex`
 * :ref:`search`

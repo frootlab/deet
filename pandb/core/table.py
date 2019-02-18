@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2019 Patrick Michl
+# Copyright (c) 2019 Frootlab Developers
 #
-# This file is part of pandora, https://frootlab.github.io/pandora
+# This file is part of Pandora, https://frootlab.github.io/pandora
 #
-#  pandora is free software: you can redistribute it and/or modify it under the
+#  Pandora is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
 #  Foundation, either version 3 of the License, or (at your option) any later
 #  version.
 #
-#  pandora is distributed in the hope that it will be useful, but WITHOUT ANY
+#  Pandora is distributed in the hope that it will be useful, but WITHOUT ANY
 #  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 #  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #  You should have received a copy of the GNU General Public License along with
-#  pandora. If not, see <http://www.gnu.org/licenses/>.
+#  Pandora. If not, see <http://www.gnu.org/licenses/>.
 #
 """Database Tables."""
 
@@ -23,10 +23,10 @@ __docformat__ = 'google'
 
 import types
 from typing import Any, NewType, Tuple, List, Optional, Iterator, Union
-from flab.base import abc, attrib, check, stype
-from flab.errors import RowLookupError, ProxyError, InvalidTypeError
-from flab.base.types import StrList, StrTuple, OptOp, SeqOp, OptType
-from flab.base.types import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
+from flib.base import abc, attrib, check, stype
+from flib.errors import RowLookupError, ProxyError, InvalidTypeError
+from flib.base.types import StrList, StrTuple, OptOp, SeqOp, OptType
+from flib.base.types import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
 from pandb.core import record, cursor
 
 #
@@ -96,7 +96,7 @@ class Table(attrib.Group):
             This does not comprise metadata of the fields, which has to be
             included within the field declarations.
         parent: Reference to parent :class:`attribute group
-            <flab.base.attrib.Group>`, which is used for inheritance and
+            <flib.base.attrib.Group>`, which is used for inheritance and
             shared attributes. By default no parent is referenced.
 
     """
@@ -605,7 +605,7 @@ class Proxy(Table, abc.Proxy):
         proxy_mode: Optional Integer, that determines the operation mode of the
             proxy.
         parent: Reference to parent :class:`attribute group
-            <flab.base.attrib.Group>`, which is used for inheritance and
+            <flib.base.attrib.Group>`, which is used for inheritance and
             shared attributes. By default no parent is referenced.
 
     """

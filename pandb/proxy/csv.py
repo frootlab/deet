@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2019 Patrick Michl
+# Copyright (c) 2019 Frootlab Developers
 #
-# This file is part of pandora, https://frootlab.github.io/pandora
+# This file is part of Pandora, https://frootlab.github.io/pandora
 #
-#  pandora is free software: you can redistribute it and/or modify it under the
+#  Pandora is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
 #  Foundation, either version 3 of the License, or (at your option) any later
 #  version.
 #
-#  pandora is distributed in the hope that it will be useful, but WITHOUT ANY
+#  Pandora is distributed in the hope that it will be useful, but WITHOUT ANY
 #  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 #  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #  You should have received a copy of the GNU General Public License along with
-#  pandora. If not, see <http://www.gnu.org/licenses/>.
+#  Pandora. If not, see <http://www.gnu.org/licenses/>.
 #
 """Table Proxy for textfiles containing delimiter-separated values."""
 
@@ -22,10 +22,10 @@ __license__ = 'GPLv3'
 __docformat__ = 'google'
 
 from typing import Any
-from flab.base import attrib
-from flab.errors import ConnectError, DisconnectError
-from flab.io import csv, ini
-from flab.io import FileRef, FileRefClassInfo
+from flib.base import attrib
+from flib.errors import ConnectError, DisconnectError
+from flib.io import csv, ini
+from flib.io import FileRef, FileRefClassInfo
 from pandb.core import table
 
 #
@@ -60,7 +60,7 @@ class Table(table.Proxy):
         Args:
             file:
             *args: Additional arguments, that are passed to
-                :class:`csv.File <flab.base.io.csv.File>`.
+                :class:`csv.File <flib.base.io.csv.File>`.
             **kwds: Additional keyword arguments, that are passed to csv.File.
 
         """
