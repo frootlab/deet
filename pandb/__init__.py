@@ -23,10 +23,10 @@ Pandora is open source and based on the Python programming language.
 
 """
 
-__version__ = '0.1.7'
+__version__ = '0.1.8'
 __license__ = 'GPLv3'
 __copyright__ = 'Copyright (c) 2019 Frootlab Developers'
-__organization__ = 'frootlab'
+__organization__ = 'Frootlab'
 __author__ = 'frootlab'
 __email__ = 'frootlab@gmail.com'
 __maintainer__ = 'Patrick Michl'

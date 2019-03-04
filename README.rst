@@ -38,7 +38,7 @@ License
 
 Pandora is available free for any use under the `GPLv3 license`_::
 
-   Copyright (c) 2019 Pandora Developers
+   Copyright (c) 2019 Frootlab Developers
    Patrick Michl <patrick.michl@gmail.com>
 
 .. _Python: https://www.python.org/
