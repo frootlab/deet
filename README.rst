@@ -78,7 +78,7 @@ The source code is available at `GitHub`_.
 .. _SQLAlchemy: https://www.sqlalchemy.org
 .. _PyPI: https://pypi.org/project/pandb/
 .. _Installation Manual: https://pandora.readthedocs.io/en/latest/install.html
-.. _online documentation: https://pandora.readthedocs.io/en/latest/
+.. _online: https://pandora.readthedocs.io/en/latest/
 .. _PDF: https://readthedocs.org/projects/pandora/downloads/pdf/latest/
 .. _Epub: https://readthedocs.org/projects/pandora/downloads/epub/latest/
 .. _HTML: https://readthedocs.org/projects/pandora/downloads/htmlzip/latest/
