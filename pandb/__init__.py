@@ -22,7 +22,7 @@ applications.
 
 """
 
-__version__ = '0.1.8'
+__version__ = '0.1.9'
 __license__ = 'GPLv3'
 __copyright__ = '2019 Frootlab Developers'
 __author__ = 'Frootlab Developers'

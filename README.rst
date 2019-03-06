@@ -86,3 +86,4 @@ The source code is available at `GitHub`_.
 .. _GPLv3 license: https://www.gnu.org/licenses/gpl.html
 .. _Frootlab: https://github.com/frootlab
 .. _Project Infimum: https://github.com/orgs/frootlab/projects
+.. _GitHub: https://github.com/frootlab/pandora
