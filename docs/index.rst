@@ -4,10 +4,10 @@ Pandora
 .. toctree::
    :maxdepth: 2
 
-   Introduction <instroduction>
+   Introduction <introduction>
    Installation <install>
    API Reference <api/pandb>
-   Glossary <glossary>
+   API Glossary <glossary>
    License <license>
 
 Index

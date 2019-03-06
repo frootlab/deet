@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2019 Frootlab Developers
+# Copyright (C) 2019 Frootlab Developers
 #
-# This file is part of Pandora, https://frootlab.github.io/pandora
+# This file is part of Pandora, https://github.com/frootlab/pandora
 #
 #  Pandora is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
@@ -14,42 +14,30 @@
 #  You should have received a copy of the GNU General Public License along with
 #  Pandora. If not, see <http://www.gnu.org/licenses/>.
 #
+"""Configuration file for the Sphinx documentation builder.
 
-#
-# Configuration file for the Sphinx documentation builder.
-#
-# This file does only contain a selection of the most common options. For a
-# full list see the documentation:
-# http://www.sphinx-doc.org/en/master/config
+This file does only contain a selection of the most common options. For a full
+list see the documentation: http://www.sphinx-doc.org/en/master/config
 
-# Parser options
+"""
+__copyright__ = '2019 Frootlab Developers'
+__author__ = 'Frootlab Developers'
+__email__ = 'frootlab@gmail.com'
+__authors__ = ['Patrick Michl <patrick.michl@gmail.com>']
+__license__ = 'GPLv3'
+__docformat__ = 'google'
 
-# from recommonmark.parser import CommonMarkParser
-
-# source_parsers = {
-#     '.md': CommonMarkParser,
-# }
-
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
+import pandb as package
 
-# -- Project information -----------------------------------------------------
-
-import pandb
-
-project = pandb.__name__
-copyright = pandb.__copyright__
-author = pandb.__author__
-version = pandb.__version__
-release = pandb.__version__
+project = package.__name__
+copyright = package.__copyright__
+author = package.__author__
+version = package.__version__
+release = package.__version__
 
 add_module_names = False
 
@@ -185,8 +173,7 @@ latex_elements = { # type: ignore
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'pandb.tex', 'Pandora Documentation',
-     'Patrick Michl', 'manual'),
+    (master_doc, 'pandora.tex', 'Pandora', 'Patrick Michl', 'manual'),
 ]
 
 
@@ -195,8 +182,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'pandb', 'Pandora Documentation',
-     [author], 1)
+    (master_doc, 'pandora', 'Pandora', [author], 1)
 ]
 
 
@@ -206,8 +192,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'pandb', 'Pandora Documentation',
-     author, 'pandb', 'One line description of project.',
+    (master_doc, 'pandora', 'Pandora',
+     author, 'pandora', 'Universal Data Proxy and SQL-Database Engine.',
      'Miscellaneous'),
 ]
 

@@ -20,7 +20,7 @@ create and work with Python virtual environments, please follow instructions on
 Install the latest distributed package
 --------------------------------------
 
-You can install the latest distributed package of pandora by using ``pip``::
+You can install the latest distributed package of Pandora by using pip::
 
     $ pip install pandb
 
@@ -33,7 +33,7 @@ repository of pandora::
 
     $ git clone https://github.com/frootlab/pandora.git
 
-Thereupon the development branch can locally be installed by using ``pip``::
+Thereupon the development branch can locally be installed by using pip::
 
     $ cd pandora
     $ pip install -e .

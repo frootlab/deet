@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2019 Frootlab Developers
+# Copyright (C) 2019 Frootlab Developers
 #
-# This file is part of Pandora, https://frootlab.github.io/pandora
+# This file is part of Pandora, https://github.com/frootlab/pandora
 #
 #  Pandora is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
@@ -14,21 +14,20 @@
 #  You should have received a copy of the GNU General Public License along with
 #  Pandora. If not, see <http://www.gnu.org/licenses/>.
 #
-"""Pandora database engine.
+"""Pandora database proxy.
 
-*Pandora* is a SQL database engine and a universal database proxy. Pandora aims
-to provide a unified SQL:2016 interface to a broad variety of different data
-sources, including SQL Databases and flat files from laboratory measurements.
-Pandora is open source and based on the Python programming language.
+*Pandora* is a universal database proxy and SQL-Database engine, that implements
+high-performance and security requirements for enterprise analytical
+applications.
 
 """
 
 __version__ = '0.1.8'
 __license__ = 'GPLv3'
-__copyright__ = 'Copyright (c) 2019 Frootlab Developers'
-__organization__ = 'Frootlab'
-__author__ = 'frootlab'
+__copyright__ = '2019 Frootlab Developers'
+__author__ = 'Frootlab Developers'
 __email__ = 'frootlab@gmail.com'
+__authors__ = ['Patrick Michl <patrick.michl@gmail.com>']
+__organization__ = 'Frootlab'
 __maintainer__ = 'Patrick Michl'
 __docformat__ = 'google'
-__authors__ = ['Patrick Michl <patrick.michl@gmail.com>']

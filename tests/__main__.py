@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-# Copyright (c) 2019 Frootlab Developers
+# Copyright (C) 2019 Frootlab Developers
 #
-# This file is part of Pandora, https://frootlab.github.io/pandora
+# This file is part of Pandora, https://github.com/frootlab/motley
 #
 #  Pandora is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
@@ -16,10 +16,11 @@
 #
 """Runner script for unittests."""
 
-__author__ = 'Patrick Michl'
-__email__ = 'frootlab@gmail.com'
 __license__ = 'GPLv3'
+__copyright__ = '2019 Frootlab Developers'
+__email__ = 'frootlab@gmail.com'
 __docformat__ = 'google'
+__authors__ = ['Patrick Michl <patrick.michl@gmail.com>']
 
 import fnmatch
 import importlib
