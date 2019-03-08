@@ -14,14 +14,13 @@
 #  You should have received a copy of the GNU General Public License along with
 #  Pandora. If not, see <http://www.gnu.org/licenses/>.
 #
-"""Pandora database proxy.
+"""Pandora database engine.
 
-*Pandora* is a universal database proxy and SQL-Database engine, that implements
+*Pandora* is a universal data proxy and SQL-Database engine, that implements
 high-performance and security requirements for enterprise analytical
 applications.
 
 """
-
 __version__ = '0.1.9'
 __license__ = 'GPLv3'
 __copyright__ = '2019 Frootlab Developers'
