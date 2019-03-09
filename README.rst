@@ -1,5 +1,6 @@
 .. image:: ./docs/logo/Pandora-256x256.png
   :align: center
+  :alt: Pandora logo
 
 Pandora
 =======
@@ -45,11 +46,16 @@ Pandora currently is in *Pre-Alpha* state, which immediately follows the
 project's *planning* phase. This means, that at least some essential
 requirements of Pandora are not yet implemented.
 
-| **Support** | **Planning** | **Alpha** | **Beta** | **Stable** |
-|-------------|--------------|-----------|----------|------------|
-| IBM-DB2 |  |  |  |  |
-| Oracle |  |  |  |  |
-| MS-SQL |  |  |  |  |
++-------------+----------+-------+------+---------+
+| Support     | Planning | Alpha | Beta | Stable  |
++=============+==========+=======+======+=========+
+| IBM-DB2     |          |       |      |         |
++-------------+----------+-------+------+---------+
+| Oracle      |          |       |      |         |
++-------------+----------+-------+------+---------+
+| SAP         |          |       |      |         |
++-------------+----------+-------+------+---------+
+
 
 Install
 -------
