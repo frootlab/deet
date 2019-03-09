@@ -39,55 +39,62 @@ data interface (and SQL dialect).
 Pandora is open source, based on the `Python`_ programming language and actively
 developed as part of `Project Infimum`_ at `Frootlab`_.
 
-Development Status
-------------------
+Current Development Status
+--------------------------
 
-Pandora currently is in *Pre-Alpha* state, which immediately follows the
-project's *planning* phase. This means, that at least some essential
-requirements of Pandora are not yet implemented.
+Pandora currently is in *Pre-Alpha* development stage, which immediately follows
+the *Planning* stage. This means, that at least some essential requirements of
+Pandora are not yet implemented. The following table gives an overview of the
+currently supported data back-ends.
 
-+-------------+----------+-------+------+---------+
-| Support     | Planning | Alpha | Beta | Stable  |
-+=============+==========+=======+======+=========+
-| IBM-DB2     |          |       |      |         |
-+-------------+----------+-------+------+---------+
-| Oracle      |          |       |      |         |
-+-------------+----------+-------+------+---------+
-| SAP         |          |       |      |         |
-+-------------+----------+-------+------+---------+
++-------------+----------+----------+----------+----------+
+| Support     | Planning | Alpha    | Beta     | Stable   |
++=============+==========+==========+==========+==========+
+| IBM-DB2     |          |          |          |          |
++-------------+----------+----------+----------+----------+
+| Oracle      |          |          |          |          |
++-------------+----------+----------+----------+----------+
+| SAP         |          |          |          |          |
++-------------+----------+----------+----------+----------+
+| CSV-Tables  |          |          |          |          |
++-------------+----------+----------+----------+----------+
 
+Installation
+------------
 
-Install
--------
+Comprehensive information and installation support is provided within the
+`online manual`_. If you are already familiar with
 
 Pandora is hosted on `PyPI`_, which allows to install the latest distributed
 version by using pip::
 
     $ pip install pandb
 
-Further information and support is provided within the `installation manual`_.
 
 Documentation
 -------------
 
-The latest Pandora documentation is available `online`_ and offline in the
-formats `PDF`_, `Epub`_ and zipped `HTML`_.
+The latest Pandora manual is available `online`_ and in the formats `PDF`_,
+`Epub`_ and zipped `HTML`_.
 
 Contribute
 ----------
 
 Contributors are very welcome! Feel free to report bugs and feature requests to
-the `issue tracker`_ provided by GitHub.
+the `issue tracker`_ provided by GitHub. Currently, as the Frootlab Developers
+team still is growing, we do not provide any Contribution Guide Lines to
+collaboration partners. However, if you are interested to join the team, we
+would be glad, to receive an informal `application`_.
+
 
 License
 -------
 
-Pandora is available free for any use under the `GPLv3 license`_::
+Pandora is `open source`_ and available free for any use under the
+`GPLv3 license`_::
 
    Copyright (C) 2019 Frootlab Developers
    Patrick Michl <patrick.michl@gmail.com>
-
-The source code is available at `GitHub`_.
 
 .. _Python: https://www.python.org/
 .. _SQLAlchemy: https://www.sqlalchemy.org
@@ -101,4 +108,5 @@ The source code is available at `GitHub`_.
 .. _GPLv3 license: https://www.gnu.org/licenses/gpl.html
 .. _Frootlab: https://github.com/frootlab
 .. _Project Infimum: https://github.com/orgs/frootlab/projects
-.. _GitHub: https://github.com/frootlab/pandora
+.. _open source: https://github.com/frootlab/pandora
+.. _application: patrick.michl@gmail.com
