@@ -1,8 +1,9 @@
 .. raw:: html
-  <div align="center">
-    <img src="https://raw.githubusercontent.com/frootlab/pandora/master/docs/logo/Pandora-256.png">
-    <br>
-  </div>
+
+   <div align="center">
+      <img src="https://raw.githubusercontent.com/frootlab/pandora/master/docs/logo/Pandora-256.png">
+      <br>
+   </div>
 
 ----------
 
