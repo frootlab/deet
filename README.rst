@@ -1,19 +1,18 @@
-<div align="center">
-  <img src="https://raw.githubusercontent.com/frootlab/pandora/master/docs/logo/Pandora-256x256.png"><br><br>
-</div>
+.. image:: ./docs/logo/Pandora-256x256.png
+  :align: center
 
 Pandora
 =======
 
 .. image:: https://travis-ci.org/frootlab/pandb.svg?branch=master
-   :target: https://travis-ci.org/frootlab/pandb
+  :target: https://travis-ci.org/frootlab/pandb
 
 .. image:: https://readthedocs.org/projects/pandora/badge/?version=latest
-    :target: https://pandora.readthedocs.io/en/latest/?badge=latest
-    :alt: Documentation Status
+  :target: https://pandora.readthedocs.io/en/latest/?badge=latest
+  :alt: Documentation Status
 
 .. image:: https://badge.fury.io/py/pandb.svg
-    :target: https://badge.fury.io/py/pandb
+  :target: https://badge.fury.io/py/pandb
 
 *Pandora* is a universal database proxy and SQL-Database engine, that implements
 high-performance and security requirements for large-scale enterprise analytical
