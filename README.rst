@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://raw.githubusercontent.com/frootlab/pandora/master/docs/logo/Pandora-256x256.png"><br><br>
+</div>
+
 Pandora
 =======
 
@@ -12,7 +16,7 @@ Pandora
     :target: https://badge.fury.io/py/pandb
 
 *Pandora* is a universal database proxy and SQL-Database engine, that implements
-high-performance and security requirements for enterprise analytical
+high-performance and security requirements for large-scale enterprise analytical
 applications.
 
 The primary goal of Pandora is to provide a unified (universal) data interface
@@ -42,11 +46,17 @@ Pandora currently is in *Pre-Alpha* state, which immediately follows the
 project's *planning* phase. This means, that at least some essential
 requirements of Pandora are not yet implemented.
 
+| **Support** | **Planning** | **Alpha** | **Beta** | **Stable** |
+|-------------|--------------|-----------|----------|------------|
+| IBM-DB2 |  |  |  |  |
+| Oracle |  |  |  |  |
+| MS-SQL |  |  |  |  |
+
 Install
 -------
 
-Pandora is hosted on `PyPI`_, which allows to install the latest packaged
-version of Pandora by using pip::
+Pandora is hosted on `PyPI`_, which allows to install the latest distributed
+version by using pip::
 
     $ pip install pandb
 
