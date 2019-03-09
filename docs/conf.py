@@ -47,10 +47,11 @@ add_module_names = False
 
 def run_apidoc(_) -> None:
     from sphinx.apidoc import main
-    sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+    sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'pandb'))
     cur_dir = os.path.abspath(os.path.dirname(__file__))
-    mod_dir = os.path.join(cur_dir, '..', 'pandb')
-    main(['-e', '-o', cur_dir, mod_dir, '--force'])
+    out_dir = os.path.join(cur_dir, 'api')
+    pkg_dir = os.path.join(cur_dir, '..', 'pandb')
+    main(['', '-o', out_dir, pkg_dir, '--separate'])
 
 def setup(app) -> None:
     app.connect('builder-inited', run_apidoc)
