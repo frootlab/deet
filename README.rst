@@ -1,6 +1,10 @@
-.. image:: ./docs/logo/Pandora-256x256.png
-  :align: center
-  :alt: Pandora logo
+.. raw:: html
+  <div align="center">
+    <img src="https://raw.githubusercontent.com/frootlab/pandora/master/docs/logo/Pandora-256.png">
+    <br>
+  </div>
+
+----------
 
 Pandora
 =======
@@ -19,9 +23,9 @@ Pandora
 high-performance and security requirements for large-scale enterprise analytical
 applications.
 
-The primary goal of Pandora is to provide a unified (universal) data interface
-for machine learning- and data analysis applications, to facilitate their
-integration into existing operational data landscapes. To achieve this goal,
+The primary goal of Pandora is to separate data integration and data analysis
+into independent tasks, by providing a unified (universal) data interface
+for machine learning- and data analysis applications. To achieve this goal,
 Pandora implements the two fundamental layers of a data warehouse:
 
 The *integration layer* of Pandora utilizes `SQLAlchemy`_ to allow it's
@@ -37,35 +41,17 @@ application to integrate a variety of different data sources, by using a unified
 data interface (and SQL dialect).
 
 Pandora is `open source`_, based on the `Python`_ programming language and
-actively developed as part of `Project Infimum`_ at `Frootlab`_.
+actively developed as part of `Project Infimum`_ at `Frootlab`_. Pandora is
+developed as a generic data interface, which can be integrated into data
+analysis applications, to facilitate the integration of data.
 
 Current Development Status
 --------------------------
 
 Pandora currently is in *Pre-Alpha* development stage, which immediately follows
 the *Planning* stage. This means, that at least some essential requirements of
-Pandora are not yet implemented. The following table gives an overview of the
-currently supported data back-ends.
-
-+-------------+----------+-----------+----------+----------+----------+
-| Support     | Planning | Pre-Alpha | Alpha    | Beta     | Stable   |
-+=============+==========+===========+==========+==========+==========+
-| IBM-DB2     |          |           |          |          |          |
-+-------------+----------+-----------+----------+----------+----------+
-| Oracle      |          |           |          |          |          |
-+-------------+----------+-----------+----------+----------+----------+
-| SAP         |          |           |          |          |          |
-+-------------+----------+-----------+----------+----------+----------+
-| MySQL       |          |           |          |          |          |
-+-------------+----------+-----------+----------+----------+----------+
-| Postgresql  |          |           |          |          |          |
-+-------------+----------+-----------+----------+----------+----------+
-| SQLite      |          |           |          |          |          |
-+-------------+----------+-----------+----------+----------+----------+
-| CSV-Tables  |          |           |          |          |          |
-+-------------+----------+-----------+----------+----------+----------+
-| R-Exports   |          |           |          |          |          |
-+-------------+----------+-----------+----------+----------+----------+
+Pandora are not yet implemented. A comprehensive list of all currently supported
+data back-ends is given in the `online manual`_.
 
 Installation
 ------------
@@ -79,8 +65,8 @@ computer, you can install the latest distributed version by using pip::
 Documentation
 -------------
 
-The latest Pandora manual is available `online`_ and in the formats `PDF`_,
-`Epub`_ and zipped `HTML`_.
+The latest Pandora documentation is available as an `online manual`_ and for
+download in the formats `PDF`_, `Epub`_ and `HTML`_.
 
 Contribute
 ----------
@@ -105,7 +91,7 @@ Pandora is `open source`_ and available free for any use under the
 .. _SQLAlchemy: https://www.sqlalchemy.org
 .. _PyPI: https://pypi.org/project/pandb/
 .. _Installation Manual: https://pandora.readthedocs.io/en/latest/install.html
-.. _online: https://pandora.readthedocs.io/en/latest/
+.. _online manual: https://pandora.readthedocs.io/en/latest/
 .. _PDF: https://readthedocs.org/projects/pandora/downloads/pdf/latest/
 .. _Epub: https://readthedocs.org/projects/pandora/downloads/epub/latest/
 .. _HTML: https://readthedocs.org/projects/pandora/downloads/htmlzip/latest/

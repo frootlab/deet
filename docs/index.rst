@@ -6,8 +6,10 @@ Pandora
 
    Introduction <introduction>
    Installation <install>
+   Data Integration <integration>
+   Staging <staging>
    API Reference <api/pandb>
-   API Glossary <glossary>
+   Glossary <glossary>
    License <license>
 
 Index

@@ -49,8 +49,8 @@ def run_apidoc(_) -> None:
     from sphinx.apidoc import main
     sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
     cur_dir = os.path.abspath(os.path.dirname(__file__))
-    module = os.path.join(cur_dir, '..', 'pandb')
-    main(['-e', '-o', cur_dir, module, '--force'])
+    mod_dir = os.path.join(cur_dir, '..', 'pandb')
+    main(['-e', '-o', cur_dir, mod_dir, '--force'])
 
 def setup(app) -> None:
     app.connect('builder-inited', run_apidoc)
@@ -66,7 +66,6 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
     'sphinx.ext.todo',
-    #'sphinx_autodoc_typehints',
     'sphinx.ext.mathjax',
     'sphinx.ext.githubpages',
     'sphinx.ext.intersphinx']
