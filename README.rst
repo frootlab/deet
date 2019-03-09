@@ -36,8 +36,8 @@ storage manager and real-time encryption. This allows the data analysis
 application to integrate a variety of different data sources, by using a unified
 data interface (and SQL dialect).
 
-Pandora is open source, based on the `Python`_ programming language and actively
-developed as part of `Project Infimum`_ at `Frootlab`_.
+Pandora is `open source`_, based on the `Python`_ programming language and
+actively developed as part of `Project Infimum`_ at `Frootlab`_.
 
 Current Development Status
 --------------------------
@@ -47,29 +47,34 @@ the *Planning* stage. This means, that at least some essential requirements of
 Pandora are not yet implemented. The following table gives an overview of the
 currently supported data back-ends.
 
-+-------------+----------+----------+----------+----------+
-| Support     | Planning | Alpha    | Beta     | Stable   |
-+=============+==========+==========+==========+==========+
-| IBM-DB2     |          |          |          |          |
-+-------------+----------+----------+----------+----------+
-| Oracle      |          |          |          |          |
-+-------------+----------+----------+----------+----------+
-| SAP         |          |          |          |          |
-+-------------+----------+----------+----------+----------+
-| CSV-Tables  |          |          |          |          |
-+-------------+----------+----------+----------+----------+
++-------------+----------+-----------+----------+----------+----------+
+| Support     | Planning | Pre-Alpha | Alpha    | Beta     | Stable   |
++=============+==========+===========+==========+==========+==========+
+| IBM-DB2     |          |           |          |          |          |
++-------------+----------+-----------+----------+----------+----------+
+| Oracle      |          |           |          |          |          |
++-------------+----------+-----------+----------+----------+----------+
+| SAP         |          |           |          |          |          |
++-------------+----------+-----------+----------+----------+----------+
+| MySQL       |          |           |          |          |          |
++-------------+----------+-----------+----------+----------+----------+
+| Postgresql  |          |           |          |          |          |
++-------------+----------+-----------+----------+----------+----------+
+| SQLite      |          |           |          |          |          |
++-------------+----------+-----------+----------+----------+----------+
+| CSV-Tables  |          |           |          |          |          |
++-------------+----------+-----------+----------+----------+----------+
+| R-Exports   |          |           |          |          |          |
++-------------+----------+-----------+----------+----------+----------+
 
 Installation
 ------------
 
 Comprehensive information and installation support is provided within the
-`online manual`_. If you are already familiar with
-
-Pandora is hosted on `PyPI`_, which allows to install the latest distributed
-version by using pip::
+`online manual`_. If you already have a Python environment configured on your
+computer, you can install the latest distributed version by using pip::
 
     $ pip install pandb
-
 
 Documentation
 -------------
