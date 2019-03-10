@@ -2,18 +2,17 @@
 
    <div align="center">
      <a href="https://github.com/frootlab/pandora">
-       <img src="https://bit.ly/2SPkj2F">
+       <img src="https://bit.ly/2TG4rnw">
      </a>
      <br>
    </div>
-
-----------
 
 Pandora
 =======
 
 .. image:: https://travis-ci.org/frootlab/pandb.svg?branch=master
   :target: https://travis-ci.org/frootlab/pandb
+  :alt: Building Status
 
 .. image:: https://readthedocs.org/projects/pandora/badge/?version=latest
   :target: https://pandora.readthedocs.io/en/latest/?badge=latest
@@ -21,6 +20,7 @@ Pandora
 
 .. image:: https://badge.fury.io/py/pandb.svg
   :target: https://badge.fury.io/py/pandb
+  :alt: PIP Version
 
 *Pandora* is a universal database proxy and SQL-Database engine, that implements
 high-performance and security requirements for large-scale enterprise analytical
@@ -80,15 +80,15 @@ team still is growing, we do not provide any Contribution Guide Lines to
 collaboration partners. However, if you are interested to join the team, we
 would be glad, to receive an informal `application`_.
 
-
 License
 -------
 
-Pandora is `open source`_ and available free for any use under the
-`GPLv3 license`_::
+Pandora is `open source`_ and available free for any use under the `GPLv3
+license`_::
 
-   Copyright (C) 2019 Frootlab Developers
-   Patrick Michl <patrick.michl@gmail.com>
+   © 2019 Frootlab Developers:
+     Patrick Michl <patrick.michl@gmail.com>
+   © 2018-2019 Patrick Michl
 
 .. _Python: https://www.python.org/
 .. _SQLAlchemy: https://www.sqlalchemy.org

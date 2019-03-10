@@ -27,21 +27,34 @@ __authors__ = ['Patrick Michl <patrick.michl@gmail.com>']
 __license__ = 'GPLv3'
 __docformat__ = 'google'
 
+import pathlib
+import re
+
+# Parse top level module for attributes
+text = pathlib.Path('../pandb/__init__.py').read_text()
+pattern = r"^[ ]*__([^\d\W]\w*)__[ ]*=[ ]*['\"]([^'\"]*)['\"]"
+matches = re.finditer(pattern, text, re.M)
+pkg = {str(m.group(1)): str(m.group(2)) for m in matches}
+
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
 import pandb as package
 
-project = package.__name__
-copyright = package.__copyright__
-author = package.__author__
-version = package.__version__
-release = package.__version__
+# project = package.__name__
+# copyright = package.__copyright__
+# author = package.__author__
+# version = package.__version__
+# release = package.__version__
+
+project = 'Pandora'
+copyright = pkg['copyright']
+author = pkg['author']
+version = pkg['version']
+release = pkg['version']
 
 add_module_names = False
-
-# -- General configuration ---------------------------------------------------
 
 # Run apidoc
 
@@ -55,10 +68,6 @@ def run_apidoc(_) -> None:
 
 def setup(app) -> None:
     app.connect('builder-inited', run_apidoc)
-
-# If your documentation needs a minimal Sphinx version, state it here.
-#
-# needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom

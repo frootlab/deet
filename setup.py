@@ -31,20 +31,17 @@ import setuptools
 def install() -> None:
     """Setuptools based installation script."""
 
-    #Get module variables from file 'pandb/__init__.py'
+    # Parse top level module for attributes
     text = pathlib.Path('./pandb/__init__.py').read_text()
-    rekey = "__([a-zA-Z][a-zA-Z0-9_]*)__"
-    reval = r"['\"]([^'\"]*)['\"]"
-    pattern = f"^[ ]*{rekey}[ ]*=[ ]*{reval}"
-    pkg_vars = {}
-    for mo in re.finditer(pattern, text, re.M):
-        pkg_vars[str(mo.group(1))] = str(mo.group(2))
+    pattern = r"^[ ]*__([^\d\W]\w*)__[ ]*=[ ]*['\"]([^'\"]*)['\"]"
+    matches = re.finditer(pattern, text, re.M)
+    pkg = {str(m.group(1)): str(m.group(2)) for m in matches}
 
     # Install package
     setuptools.setup(
         name='pandb',
-        version=pkg_vars['version'],
-        description='pandora database proxy',
+        version=pkg['version'],
+        description='Pandora Data Proxy',
         long_description=pathlib.Path('.', 'README.rst').read_text(),
         long_description_content_type='text/x-rst',
         classifiers=[
@@ -62,9 +59,9 @@ def install() -> None:
             'orm-framework '
             'data-warehouse '),
         url='https://frootlab.github.io/pandora',
-        author=pkg_vars['author'],
-        author_email=pkg_vars['email'],
-        license=pkg_vars['license'],
+        author=pkg['author'],
+        author_email=pkg['email'],
+        license=pkg['license'],
         packages=setuptools.find_packages(exclude=['docs', 'tests']),
         package_dir={
             'pandb': 'pandb'},

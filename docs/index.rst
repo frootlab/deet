@@ -10,6 +10,12 @@ Pandora
    Data Integration <integration>
    Staging <staging>
    API Reference <api/pandb>
-   Appendix <appendix>
    Glossary <glossary>
    License <license>
+
+Appendix
+--------
+
+* :ref:`modindex`
+* :ref:`genindex`
+* :ref:`search`
