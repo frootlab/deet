@@ -30,6 +30,8 @@ __docformat__ = 'google'
 import pathlib
 import re
 
+# -- Project information -----------------------------------------------------
+
 # Parse top level module for attributes
 text = pathlib.Path('../pandb/__init__.py').read_text()
 pattern = r"^[ ]*__([^\d\W]\w*)__[ ]*=[ ]*['\"]([^'\"]*)['\"]"
@@ -47,8 +49,6 @@ import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-add_module_names = False
-
 # Run apidoc
 def run_apidoc(_) -> None:
     from sphinx.apidoc import main
@@ -61,9 +61,12 @@ def run_apidoc(_) -> None:
 def setup(app) -> None:
     app.connect('builder-inited', run_apidoc)
 
-# Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# ones.
+# -- General configuration ---------------------------------------------------
+
+add_module_names = False
+
+# Add any Sphinx extension module names here, as strings. They can be extensions
+# coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
@@ -142,9 +145,6 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-
-# -- Options for HTMLHelp output ---------------------------------------------
-
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'pandoradoc'
 
@@ -218,11 +218,8 @@ epub_exclude_files = ['search.html']
 
 # -- Extension configuration -------------------------------------------------
 
-# -- Options for todo extension ----------------------------------------------
-
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
-
 
 # Intersphinx Mapping
 intersphinx_mapping = {
