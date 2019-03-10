@@ -36,30 +36,20 @@ pattern = r"^[ ]*__([^\d\W]\w*)__[ ]*=[ ]*['\"]([^'\"]*)['\"]"
 matches = re.finditer(pattern, text, re.M)
 pkg = {str(m.group(1)): str(m.group(2)) for m in matches}
 
-print(pkg)
-
-
-import os
-import sys
-sys.path.insert(0, os.path.abspath('..'))
-
-# import pandb as package
-# project = package.__name__
-# copyright = package.__copyright__
-# author = package.__author__
-# version = package.__version__
-# release = package.__version__
-
+# Define module variables used by Sphinx
 project = 'Pandora'
 copyright = pkg['copyright']
 author = pkg['author']
 version = pkg['version']
 release = pkg['version']
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..'))
+
 add_module_names = False
 
 # Run apidoc
-
 def run_apidoc(_) -> None:
     from sphinx.apidoc import main
     sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'pandb'))
@@ -113,8 +103,8 @@ pygments_style = None
 
 # -- Options for HTML output -------------------------------------------------
 
-html_title = 'Pandora'
-html_logo = 'logo/Pandora-128.png'
+html_title = project
+html_logo = f'logo/{project}-128.png'
 html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
@@ -183,7 +173,7 @@ latex_elements = { # type: ignore
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'pandora.tex', 'Pandora', 'Patrick Michl', 'manual'),
+    (master_doc, 'pandora.tex', project, 'Patrick Michl', 'manual'),
 ]
 
 
@@ -192,7 +182,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'pandora', 'Pandora', [author], 1)
+    (master_doc, 'pandora', project, [author], 1)
 ]
 
 
@@ -202,7 +192,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'pandora', 'Pandora',
+    (master_doc, 'pandora', project,
      author, 'pandora', 'Universal Data Proxy and SQL-Database Engine.',
      'Miscellaneous'),
 ]
