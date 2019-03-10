@@ -1,12 +1,10 @@
 .. raw:: html
 
-   <div align="center">
+   <div style="float: right;">
      <a href="https://github.com/frootlab/pandora">
        <img src="https://bit.ly/2TG4rnw">
-     </a><br>
+     </a>
    </div>
-
-------------
 
 Pandora
 =======
