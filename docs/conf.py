@@ -36,12 +36,14 @@ pattern = r"^[ ]*__([^\d\W]\w*)__[ ]*=[ ]*['\"]([^'\"]*)['\"]"
 matches = re.finditer(pattern, text, re.M)
 pkg = {str(m.group(1)): str(m.group(2)) for m in matches}
 
+print(pkg)
+
+
 import os
 import sys
 sys.path.insert(0, os.path.abspath('..'))
 
-import pandb as package
-
+# import pandb as package
 # project = package.__name__
 # copyright = package.__copyright__
 # author = package.__author__
