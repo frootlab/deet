@@ -23,9 +23,9 @@ application to integrate a variety of different data sources, by using a unified
 data interface (and SQL dialect).
 
 Pandora is open source, based on the `Python`_ programming language and actively
-developed as part of `Project Infimum`_ at `Frootlab`_.
+developed as part of the `Smart Analytics`_ project at `Frootlab`_.
 
 .. _SQLAlchemy: https://www.sqlalchemy.org
 .. _Python: https://www.python.org/
 .. _Frootlab: https://github.com/frootlab
-.. _Project Infimum: https://github.com/orgs/frootlab/projects
+.. _Smart Analytics: https://github.com/orgs/frootlab/projects

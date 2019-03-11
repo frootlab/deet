@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#
 # Copyright (C) 2019 Frootlab Developers
 #
 # This file is part of Pandora, https://github.com/frootlab/pandora
@@ -17,11 +18,11 @@
 """Cursor Class."""
 
 __copyright__ = '2019 Frootlab Developers'
+__license__ = 'GPLv3'
+__docformat__ = 'google'
 __author__ = 'Frootlab Developers'
 __email__ = 'frootlab@gmail.com'
 __authors__ = ['Patrick Michl <patrick.michl@gmail.com>']
-__license__ = 'GPLv3'
-__docformat__ = 'google'
 
 import random
 from typing import List, NewType, Tuple, Union, Optional

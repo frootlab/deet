@@ -43,8 +43,8 @@ application to integrate a variety of different data sources, by using a unified
 data interface (and SQL dialect).
 
 Pandora is `open source`_, based on the `Python`_ programming language and
-actively developed as part of `Project Infimum`_ at `Frootlab`_. Pandora is
-developed as a generic data interface, which can be integrated into data
+actively developed as part of `Smart Analytics`_ project at `Frootlab`_. Pandora
+is developed as a generic data interface, which can be integrated into data
 analysis applications, to facilitate the integration of data.
 
 Current Development Status
@@ -100,6 +100,6 @@ license`_::
 .. _issue tracker: https://github.com/frootlab/pandora/issues
 .. _GPLv3 license: https://www.gnu.org/licenses/gpl.html
 .. _Frootlab: https://github.com/frootlab
-.. _Project Infimum: https://github.com/orgs/frootlab/projects
+.. _Smart Analytics: https://github.com/orgs/frootlab/projects
 .. _open source: https://github.com/frootlab/pandora
 .. _application: patrick.michl@gmail.com

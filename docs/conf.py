@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#
 # Copyright (C) 2019 Frootlab Developers
 #
 # This file is part of Pandora, https://github.com/frootlab/pandora
@@ -21,25 +22,28 @@ list see the documentation: http://www.sphinx-doc.org/en/master/config
 
 """
 __copyright__ = '2019 Frootlab Developers'
+__license__ = 'GPLv3'
+__docformat__ = 'google'
 __author__ = 'Frootlab Developers'
 __email__ = 'frootlab@gmail.com'
 __authors__ = ['Patrick Michl <patrick.michl@gmail.com>']
-__license__ = 'GPLv3'
-__docformat__ = 'google'
 
 import pathlib
 import re
 
 # -- Project information -----------------------------------------------------
 
+# Module Variables
+project = 'Pandora'
+package = 'pandb'
+
 # Parse top level module for attributes
-text = pathlib.Path('../pandb/__init__.py').read_text()
+text = pathlib.Path(f'../{package}/__init__.py').read_text()
 pattern = r"^[ ]*__([^\d\W]\w*)__[ ]*=[ ]*['\"]([^'\"]*)['\"]"
 matches = re.finditer(pattern, text, re.M)
 pkg = {str(m.group(1)): str(m.group(2)) for m in matches}
 
 # Define module variables used by Sphinx
-project = 'Pandora'
 copyright = pkg['copyright']
 author = pkg['author']
 version = pkg['version']
@@ -52,10 +56,10 @@ sys.path.insert(0, os.path.abspath('..'))
 # Run apidoc
 def run_apidoc(_) -> None:
     from sphinx.apidoc import main
-    sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'pandb'))
+    sys.path.append(os.path.join(os.path.dirname(__file__), '..', package))
     cur_dir = os.path.abspath(os.path.dirname(__file__))
     out_dir = os.path.join(cur_dir, 'api')
-    pkg_dir = os.path.join(cur_dir, '..', 'pandb')
+    pkg_dir = os.path.join(cur_dir, '..', package)
     main(['', '-o', out_dir, pkg_dir, '--separate'])
 
 def setup(app) -> None:
@@ -146,8 +150,7 @@ html_static_path = ['_static']
 # html_sidebars = {}
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'pandoradoc'
-
+htmlhelp_basename = f'{package}doc'
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -173,29 +176,23 @@ latex_elements = { # type: ignore
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'pandora.tex', project, 'Patrick Michl', 'manual'),
+    (master_doc, f'{project}.tex', project, 'Patrick Michl', 'manual'),
 ]
-
 
 # -- Options for manual page output ------------------------------------------
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'pandora', project, [author], 1)
-]
-
+man_pages = [(master_doc, package, project, [author], 1)]
 
 # -- Options for Texinfo output ----------------------------------------------
 
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'pandora', project,
-     author, 'pandora', 'Universal Data Proxy and SQL-Database Engine.',
-     'Miscellaneous'),
-]
+texinfo_documents = [(
+    master_doc, package, project, author, package, pkg['description'],
+    'Miscellaneous')]
 
 
 # -- Options for Epub output -------------------------------------------------
@@ -223,4 +220,8 @@ todo_include_todos = True
 
 # Intersphinx Mapping
 intersphinx_mapping = {
-    'python': ('https://docs.python.org/3', None)}
+    'python': ('https://docs.python.org/3', None),
+    'numpy': ('http://docs.scipy.org/doc/numpy/', None),
+    'flib': ('http://flib.readthedocs.io/en/latest/', None),
+    'nemoa': ('http://nemoa.readthedocs.io/en/latest/', None),
+    'motley': ('http://motley.readthedocs.io/en/latest/', None)}

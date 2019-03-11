@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+#
 # Copyright (C) 2019 Frootlab Developers
 #
 # This file is part of Pandora, https://github.com/frootlab/pandora
@@ -18,11 +19,11 @@
 """Setuptools based installation."""
 
 __copyright__ = '2019 Frootlab Developers'
+__license__ = 'GPLv3'
+__docformat__ = 'google'
 __author__ = 'Frootlab Developers'
 __email__ = 'frootlab@gmail.com'
 __authors__ = ['Patrick Michl <patrick.michl@gmail.com>']
-__license__ = 'GPLv3'
-__docformat__ = 'google'
 
 import pathlib
 import re
@@ -41,7 +42,7 @@ def install() -> None:
     setuptools.setup(
         name='pandb',
         version=pkg['version'],
-        description='Pandora Data Proxy',
+        description=pkg['description'],
         long_description=pathlib.Path('.', 'README.rst').read_text(),
         long_description_content_type='text/x-rst',
         classifiers=[
@@ -58,7 +59,7 @@ def install() -> None:
             'database-proxy '
             'orm-framework '
             'data-warehouse '),
-        url='https://frootlab.github.io/pandora',
+        url=pkg['url'],
         author=pkg['author'],
         author_email=pkg['email'],
         license=pkg['license'],
