@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2019 Frootlab Developers
+# Copyright (C) 2019 Frootlab
 #
-# This file is part of Pandora, https://github.com/frootlab/pandora
+# This file is part of Pandora, https://www.frootlab.org/pandora
 #
 #  Pandora is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
@@ -24,9 +24,9 @@ applications.
 """
 __version__ = '0.1.9'
 __license__ = 'GPLv3'
-__copyright__ = '2019 Frootlab Developers'
+__copyright__ = '2019 Frootlab'
 __description__ = 'Universal Data Proxy'
-__url__ = 'https://github.com/frootlab/pandora'
+__url__ = 'https://www.frootlab.org/pandora'
 __organization__ = 'Frootlab'
 __author__ = 'Frootlab Developers'
 __email__ = 'contact@frootlab.org'
