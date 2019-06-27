@@ -22,7 +22,7 @@ high-performance and security requirements for enterprise analytical
 applications.
 
 """
-__version__ = '0.1.9'
+__version__ = '0.1.10'
 __license__ = 'GPLv3'
 __copyright__ = '2019 Frootlab'
 __description__ = 'Universal Data Proxy'

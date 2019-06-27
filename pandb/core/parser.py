@@ -86,7 +86,7 @@ class SQLOperators(parser.Vocabulary):
 
         # Binding Operators
         self.update([
-            Symbol(BINARY, ',', parser._pack, 30, True), # pylint: disable=W0212
+            Symbol(BINARY, ',', parser.pack, 30, True), # Pack Arguments
             Symbol(BINARY, '||', operator.concat, 1)])
 
         # Arithmetic Operators
@@ -230,9 +230,9 @@ class SQLFunctions(SQLOperators):
 
         # # Function Argument Binding
         # self.update([
-        #     Symbol(BINARY, 'AS', parser._pack, 30),
+        #     Symbol(BINARY, 'AS', parser.pack, 30),
         #     Symbol(BINARY, '||', operator.concat, 1)])
-        #     #Symbol(BINARY, 'AS', parser._pack, 13, True),
+        #     #Symbol(BINARY, 'AS', parser.pack, 13, True),
 
         # Aggregate Functions
         self.update([

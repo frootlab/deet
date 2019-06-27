@@ -40,8 +40,8 @@ class TestParser(test.ModuleTest):
         pass # Implicitely tested in test_SQLOperators
 
     def test_SQLOperators(self) -> None:
-        # The individual operators are tested within seperate tests. Here the
-        # operator associativity and precedence is tested.
+        # Note: The individual operators are tested within seperate tests. Here
+        # the operator associativity and precedence is tested.
         # Note: The Precedence is not required to be tested between different
         # operators of same precedence, like comparison operators. In this case
         # the operators are always evaluated from left to right.
@@ -265,3 +265,68 @@ class TestParser(test.ModuleTest):
             self.assertCaseEqual(peval, [
                 Case(('NOT(x)', True), {}, False),
                 Case(('NOT(x)', False), {}, True)])
+
+    # def test_SQLFunctions(self) -> None:
+    #     pass
+
+    def test_SQLFunctions_aggregate(self) -> None:
+        parse = parser.parse_clause
+        peval: AnyOp = lambda expr, *args: parse(expr).eval(*args)
+
+        with self.subTest(function='COUNT'):
+            self.assertCaseEqual(peval, [
+                Case(('COUNT(x)', 'abc'), {}, 3),
+                Case(('COUNT(x)', [1, 3, 5]), {}, 3)])
+
+        with self.subTest(function='MIN'):
+            self.assertCaseEqual(peval, [
+                Case(('MIN(x)', 'abc'), {}, 'a'),
+                Case(('MIN(x)', [1, 3, 5]), {}, 1)])
+
+        with self.subTest(function='MAX'):
+            self.assertCaseEqual(peval, [
+                Case(('MAX(x)', 'abc'), {}, 'c'),
+                Case(('MAX(x)', [1, 3, 5]), {}, 5)])
+
+        with self.subTest(function='SUM'):
+            self.assertCaseEqual(peval, [
+                Case(('SUM(x)', [1, 3, 5]), {}, 9)])
+
+        with self.subTest(function='AVG'):
+            self.assertCaseEqual(peval, [
+                Case(('AVG(x)', [1, 3, 5]), {}, 3.0)])
+
+        with self.subTest(function='STDDEV_POP'):
+            self.assertCaseEqual(peval, [
+                Case(('STDDEV_POP(x)', [1, 2]), {}, 0.5),
+                Case(('STDDEV_POP(x)', [1, 1, 2, 2]), {}, 0.5)])
+
+        with self.subTest(function='STDDEV_SAMP'):
+            self.assertCaseEqual(peval, [
+                Case(('STDDEV_SAMP(x)', [1, 2, 3]), {}, 1.0),
+                Case(('STDDEV_SAMP(x)', [1, 3, 5]), {}, 2.0)])
+
+        with self.subTest(function='VAR_POP'):
+            self.assertCaseEqual(peval, [
+                Case(('VAR_POP(x)', [1, 2]), {}, 0.25),
+                Case(('VAR_POP(x)', [1, 1, 2, 2]), {}, 0.25)])
+
+        with self.subTest(function='VAR_SAMP'):
+            self.assertCaseEqual(peval, [
+                Case(('VAR_SAMP(x)', [1, 2, 3]), {}, 1.0),
+                Case(('VAR_SAMP(x)', [1, 3, 5]), {}, 4.0)])
+
+        with self.subTest(function='COVAR_POP'):
+            self.assertCaseEqual(peval, [
+                Case(('COVAR_POP(x, y)', [1, 1], [1, 3]), {}, 0.0),
+                Case(('COVAR_POP(x, y)', [1, 2], [1, 3]), {}, 0.5),
+                Case(('COVAR_POP(x, y)', [1, 3], [1, 3]), {}, 1.0),
+                Case(('COVAR_POP(x, y)', [1, 3], [3, 1]), {}, -1.0)])
+
+        with self.subTest(function='COVAR_SAMP'):
+            self.assertCaseEqual(peval, [
+                Case(('COVAR_SAMP(x, y)', [1, 1, 1], [1, 2, 3]), {}, 0.0),
+                Case(('COVAR_SAMP(x, y)', [1, 3, 5], [1, 3, 5]), {}, 4.0),
+                Case(('COVAR_SAMP(x, y)', [1, 2, 3], [3, 2, 1]), {}, -1.0),
+                Case(('COVAR_SAMP(x, y)', [1, 2, 3], [5, 3, 1]), {}, -2.0),
+                Case(('COVAR_SAMP(x, y)', [1, 3, 5], [5, 3, 1]), {}, -4.0)])
