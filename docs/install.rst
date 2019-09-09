@@ -1,7 +1,7 @@
 Installation
 ============
 
-*Pandora* requires Python 3.7 or later. If you do not already have a Python
+*Deet* requires Python 3.7 or later. If you do not already have a Python
 environment configured on your computer, please see the instructions for
 installing the full `scientific Python stack`_.
 
@@ -13,29 +13,29 @@ installing the full `scientific Python stack`_.
    to their online documentation.
 
 Below it is assumed, that you have the default Python environment configured on
-your computer and you intend to install Pandora inside of it. If you want to
+your computer and you intend to install Deet inside of it. If you want to
 create and work with Python virtual environments, please follow instructions on
 `venv`_ and `virtual environments`_.
 
 Install the latest distributed package
 --------------------------------------
 
-You can install the latest distributed package of Pandora by using pip::
+You can install the latest distributed package of Deet by using pip::
 
-    $ pip install pandb
+    $ pip install deet
 
 Install the development branch
 ------------------------------
 
 The installation requires that you have `Git`_ installed
 on your system. Under this prerequisite the first step is to clone the GitHub
-repository of pandora::
+repository of deet::
 
-    $ git clone https://github.com/frootlab/pandora.git
+    $ git clone https://github.com/frootlab/deet.git
 
 Thereupon the development branch can locally be installed by using pip::
 
-    $ cd pandora
+    $ cd deet
     $ pip install -e .
 
 The ``pip install`` command allows you to follow the development branch as
@@ -53,7 +53,7 @@ update it anytime by running a ``git pull`` in this directory::
 Testing the development branch
 ------------------------------
 
-Pandora uses the Python builtin module :module:`unittest` for testing. Since the
+Deet uses the Python builtin module :module:`unittest` for testing. Since the
 tests are not included in the distributed package at you are required to install
 the development branch, as described above. Thereupon you have to switch to the
 repository directory and run::

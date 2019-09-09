@@ -1,7 +1,7 @@
 Data Integration
 ================
 
-The *integration layer* of Pandora utilizes `SQLAlchemy`_ to allow it's
+The *integration layer* of Deet utilizes `SQLAlchemy`_ to allow it's
 connection to a variety of SQL-Databases (e.g. IBM DB2, Oracle, SAP, MS-SQL,
 MS-Access, Firebird, Sybase, MySQL, Postgresql, SQLite, etc.). Thereupon it
 provides native support for flat file databases (e.g. CSV-Tables, R-Table

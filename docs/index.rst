@@ -1,4 +1,4 @@
-Pandora
+Deet
 =======
 
 .. toctree::

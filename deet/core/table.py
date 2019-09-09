@@ -2,18 +2,18 @@
 #
 # Copyright (C) 2019 Frootlab
 #
-# This file is part of Pandora, https://www.frootlab.org/pandora
+# This file is part of Deet, https://www.frootlab.org/deet
 #
-#  Pandora is free software: you can redistribute it and/or modify it under the
+#  Deet is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
 #  Foundation, either version 3 of the License, or (at your option) any later
 #  version.
 #
-#  Pandora is distributed in the hope that it will be useful, but WITHOUT ANY
+#  Deet is distributed in the hope that it will be useful, but WITHOUT ANY
 #  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 #  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #  You should have received a copy of the GNU General Public License along with
-#  Pandora. If not, see <http://www.gnu.org/licenses/>.
+#  Deet. If not, see <http://www.gnu.org/licenses/>.
 #
 """Database Tables."""
 
@@ -30,7 +30,7 @@ from hup.base import abc, attrib, stype
 from hup.errors import RowLookupError, ProxyError, InvalidTypeError
 from hup.typing import check, StrList, StrTuple, OptOp, SeqOp, OptType
 from hup.typing import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
-from pandb.core import record, cursor
+from deet.core import record, cursor
 
 #
 # Structural Types
@@ -117,7 +117,7 @@ class Table(attrib.Group):
     :class:`MappingProxy <types.MappingProxyType>`. Individual entries can be
     accessed and changed by the methods :meth:`.get_metadata` and
     :meth:`.set_metadata`. This attribute is not used by the :class:`Table class
-    <pandb.core.table.Table>` itself, but intended for data integration by
+    <deet.core.table.Table>` itself, but intended for data integration by
     third-party extensions.
     """
 
@@ -396,7 +396,7 @@ class Table(attrib.Group):
         """Get cursor on a specified result set of records from table.
 
         This method is motivated by the SQL `SELECT`_ statement and creates a
-        :class:`Cursor class <pandb.core.table.Cursor>` instance with specified
+        :class:`Cursor class <deet.core.table.Cursor>` instance with specified
         properties.
 
         Args:
@@ -428,7 +428,7 @@ class Table(attrib.Group):
                 the result set is returned as a list of tuples.
             batchsize: Integer, that specifies the default number of rows which
                 is to be fetched by the method :meth:`Cursor.fetch
-                <pandb.core.cursor.Cursor.fetch>`. It defaults to 1, meaning to
+                <deet.core.cursor.Cursor.fetch>`. It defaults to 1, meaning to
                 fetch a single row at a time. Whether and which batchsize to use
                 depends on the application and should be considered with care.
                 The batchsize can also be adapted during the lifetime of the
@@ -438,7 +438,7 @@ class Table(attrib.Group):
                 initializing the curser, it's mode can not be changed anymore.
 
         Returns:
-            New instance of :class:`Cursor class <pandb.core.cursor.Cursor>` on
+            New instance of :class:`Cursor class <deet.core.cursor.Cursor>` on
             on a specified result set from the table.
 
         .. _SELECT: https://en.wikipedia.org/wiki/Select_(SQL)

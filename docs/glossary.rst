@@ -7,16 +7,16 @@ Glossary
 
         *Row like* data comprises different data formats, which are used to
         represent table records. This includes tuples, mappings and instances of
-        the :class:`Record class <pandb.core.table.Record>`. The :class:`Table
-        class <pandb.core.table.Table>` accepts these data types for appending
-        rows by :meth:`~pandb.core.table.Table.insert` and for retrieving rows
-        by :meth:`~pandb.core.table.Table.select`.
+        the :class:`Record class <deet.core.table.Record>`. The :class:`Table
+        class <deet.core.table.Table>` accepts these data types for appending
+        rows by :meth:`~deet.core.table.Table.insert` and for retrieving rows
+        by :meth:`~deet.core.table.Table.select`.
 
     Cursor Mode
 
         The *cursor mode* defines the *scrolling type* and the *operation mode*
         of a cursor. Internally the respective parameters of the :class:`Cursor
-        class <pandb.core.table.Cursor>` are identified by binary flags. The
+        class <deet.core.table.Cursor>` are identified by binary flags. The
         public interface uses a string representation, given by the space
         separated names of the scrolling type and the the operation mode.
         Supported scrolling types are:

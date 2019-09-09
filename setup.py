@@ -3,18 +3,18 @@
 #
 # Copyright (C) 2019 Frootlab
 #
-# This file is part of Pandora, https://www.frootlab.org/pandora
+# This file is part of Deet, https://www.frootlab.org/deet
 #
-#  Pandora is free software: you can redistribute it and/or modify it under the
+#  Deet is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
 #  Foundation, either version 3 of the License, or (at your option) any later
 #  version.
 #
-#  Pandora is distributed in the hope that it will be useful, but WITHOUT ANY
+#  Deet is distributed in the hope that it will be useful, but WITHOUT ANY
 #  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 #  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #  You should have received a copy of the GNU General Public License along with
-#  Pandora. If not, see <http://www.gnu.org/licenses/>.
+#  Deet. If not, see <http://www.gnu.org/licenses/>.
 #
 """Setuptools based installation."""
 
@@ -33,14 +33,14 @@ def install() -> None:
     """Setuptools based installation script."""
 
     # Parse top level module for attributes
-    text = pathlib.Path('./pandb/__init__.py').read_text()
+    text = pathlib.Path('./deet/__init__.py').read_text()
     pattern = r"^[ ]*__([^\d\W]\w*)__[ ]*=[ ]*['\"]([^'\"]*)['\"]"
     matches = re.finditer(pattern, text, re.M)
     pkg = {str(m.group(1)): str(m.group(2)) for m in matches}
 
     # Install package
     setuptools.setup(
-        name='pandb',
+        name='deet',
         version=pkg['version'],
         description=pkg['description'],
         long_description=pathlib.Path('.', 'README.md').read_text(),
@@ -65,7 +65,7 @@ def install() -> None:
         license=pkg['license'],
         packages=setuptools.find_packages(exclude=['docs', 'tests']),
         package_dir={
-            'pandb': 'pandb'},
+            'deet': 'deet'},
         python_requires='>=3.7',
         install_requires=[
             'numpy>=1.15',

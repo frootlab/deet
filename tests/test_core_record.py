@@ -2,20 +2,20 @@
 #
 # Copyright (C) 2019 Frootlab
 #
-# This file is part of Pandora, https://github.com/frootlab/motley
+# This file is part of Deet, https://github.com/frootlab/motley
 #
-#  Pandora is free software: you can redistribute it and/or modify it under the
+#  Deet is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
 #  Foundation, either version 3 of the License, or (at your option) any later
 #  version.
 #
-#  Pandora is distributed in the hope that it will be useful, but WITHOUT ANY
+#  Deet is distributed in the hope that it will be useful, but WITHOUT ANY
 #  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 #  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #  You should have received a copy of the GNU General Public License along with
-#  Pandora. If not, see <http://www.gnu.org/licenses/>.
+#  Deet. If not, see <http://www.gnu.org/licenses/>.
 #
-"""Unittests for module 'pandb.core.record'."""
+"""Unittests for module 'deet.core.record'."""
 
 __copyright__ = '2019 Frootlab'
 __license__ = 'GPLv3'
@@ -25,7 +25,7 @@ __email__ = 'contact@frootlab.org'
 __authors__ = ['Patrick Michl <patrick.michl@frootlab.org>']
 
 import dataclasses
-from pandb.core import record
+from deet.core import record
 from hup.typing import AnyOp
 from hup.base import test
 from hup.base.test import Case

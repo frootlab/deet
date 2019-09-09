@@ -2,18 +2,18 @@
 #
 # Copyright (C) 2019 Frootlab
 #
-# This file is part of Pandora, https://www.frootlab.org/pandora
+# This file is part of Deet, https://www.frootlab.org/deet
 #
-#  Pandora is free software: you can redistribute it and/or modify it under the
+#  Deet is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
 #  Foundation, either version 3 of the License, or (at your option) any later
 #  version.
 #
-#  Pandora is distributed in the hope that it will be useful, but WITHOUT ANY
+#  Deet is distributed in the hope that it will be useful, but WITHOUT ANY
 #  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
 #  A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 #  You should have received a copy of the GNU General Public License along with
-#  Pandora. If not, see <http://www.gnu.org/licenses/>.
+#  Deet. If not, see <http://www.gnu.org/licenses/>.
 #
 """Cursor Class."""
 
@@ -30,7 +30,7 @@ from hup.base import attrib, operator, stype
 from hup.errors import InvalidTypeError, UserError
 from hup.typing import StrList, StrTuple, OptIntList, OptOp, Callable, OptInt
 from hup.typing import OptStr, Iterator, Mapping, SeqOp, AnyOp, OptType, BoolOp
-from pandb.core import record
+from deet.core import record
 
 #
 # Exceptions
@@ -126,7 +126,7 @@ class Cursor(attrib.Group):
             :class:`tuple` and :class:`dict`. The default type of the returned
             records depends on the variable definitions. If no variables are
             defined, the records by default are returned as instances of the
-            :class:`Record class <pandb.core.record.Record>`, if variables are
+            :class:`Record class <deet.core.record.Record>`, if variables are
             defined, then the records by default are returned as tuples.
 
     """

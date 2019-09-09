@@ -1,7 +1,7 @@
 License
 =======
 
-Pandora is distributed with the GNU General Public License v3 [GPLV3]_::
+Deet is distributed with the GNU General Public License v3 [GPLV3]_::
 
     GNU General Public License
     Version 3, 29 June 2007
