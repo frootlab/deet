@@ -1,4 +1,4 @@
-<div align="center" width="350px">
+<div align="center" style="width:350px;">
   <a href="https://www.frootlab.org/pandora">
     <img src="https://www.frootlab.org/images/fig/pandora.svg">
   </a><br>
