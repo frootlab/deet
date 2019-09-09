@@ -1,7 +1,5 @@
 <div align="center">
-  <a href="https://www.frootlab.org/pandora">
-    <img src="https://www.frootlab.org/images/fig/pandora.svg" style="width:350px;">
-  </a><br>
+  <img src="https://www.frootlab.org/images/fig/pandora.svg" width=350px>
 </div>
 
 Pandora
