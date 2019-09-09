@@ -9,13 +9,13 @@ Pandora
 [![Documentation Status](https://readthedocs.org/projects/pandora/badge/?version=latest)](https://pandora.readthedocs.io/en/latest/?badge=latest)
 [![PIP Version](https://badge.fury.io/py/pandb.svg)](https://badge.fury.io/py/pandb)
 
-*Pandora* is a universal database proxy and SQL-Database engine, that implements
+*Pandora* is a universal data mapper and SQL-Database engine, that implements
 high-performance and security requirements for large-scale enterprise analytical
 applications.
 
 The primary goal of Pandora is to separate data integration and data analysis
-into independent tasks, by providing a unified (universal) data interface for
-machine learning- and data analysis applications. To achieve this goal, Pandora
+into independent tasks, by providing a universal data interface for machine
+learning- and data analysis applications. To achieve this goal, Pandora
 implements the two fundamental layers of a data warehouse:
 
 The *integration layer* of Pandora utilizes
