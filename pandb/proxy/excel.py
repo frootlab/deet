@@ -31,7 +31,7 @@ except ImportError as err:
         "requires package openpyxl: "
         "https://pypi.org/project/openpyxl") from err
 
-from flib.base import attrib
+from hup.base import attrib
 from pandb.core import table
 
 #

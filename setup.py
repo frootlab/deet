@@ -70,7 +70,7 @@ def install() -> None:
         install_requires=[
             'numpy>=1.15',
             'SQLAlchemy>=1.2.17',
-            'flib>=0.9']
+            'hup>=0.9.2']
     )
 
 if __name__ == '__main__':

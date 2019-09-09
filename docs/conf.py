@@ -224,6 +224,6 @@ todo_include_todos = True
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3', None),
     'numpy': ('http://docs.scipy.org/doc/numpy/', None),
-    'flib': ('http://flib.readthedocs.io/en/latest/', None),
+    'hup': ('http://hup.readthedocs.io/en/latest/', None),
     'nemoa': ('http://nemoa.readthedocs.io/en/latest/', None),
     'motley': ('http://motley.readthedocs.io/en/latest/', None)}

@@ -27,8 +27,8 @@ __authors__ = ['Patrick Michl <patrick.michl@frootlab.org>']
 import string
 from typing import Any
 from pandb.core import cursor, record, table
-from flib.typing import StrList
-from flib.base import test
+from hup.typing import StrList
+from hup.base import test
 
 #
 # Test Cases

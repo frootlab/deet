@@ -26,10 +26,10 @@ __authors__ = ['Patrick Michl <patrick.michl@frootlab.org>']
 
 import random
 from typing import List, NewType, Tuple, Union, Optional
-from flib.base import attrib, operator, stype
-from flib.errors import InvalidTypeError, UserError
-from flib.typing import StrList, StrTuple, OptIntList, OptOp, Callable, OptInt
-from flib.typing import OptStr, Iterator, Mapping, SeqOp, AnyOp, OptType, BoolOp
+from hup.base import attrib, operator, stype
+from hup.errors import InvalidTypeError, UserError
+from hup.typing import StrList, StrTuple, OptIntList, OptOp, Callable, OptInt
+from hup.typing import OptStr, Iterator, Mapping, SeqOp, AnyOp, OptType, BoolOp
 from pandb.core import record
 
 #
@@ -120,7 +120,7 @@ class Cursor(attrib.Group):
             order is ascending with respect to given column names in the
             orderby parameter, for ``True`` it is descending.
         parent: Reference to parent :class:'attribute group
-            <flib.base.attrib.Group>', which is used for inheritance and
+            <hup.base.attrib.Group>', which is used for inheritance and
             shared attributes. By default no parent is referenced.
         dtype: Optional type of the returned records. Supported types are
             :class:`tuple` and :class:`dict`. The default type of the returned

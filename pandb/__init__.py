@@ -17,20 +17,20 @@
 #
 """Pandora database engine.
 
-*Pandora* is a universal data proxy and SQL-Database engine, that implements
+*Pandora* is a universal data mapper and SQL-Database engine, that implements
 high-performance and security requirements for enterprise analytical
 applications.
 
 """
-__version__ = '0.1.10'
+__version__ = '0.1.11'
 __license__ = 'GPLv3'
 __copyright__ = '2019 Frootlab'
-__description__ = 'Universal Data Proxy'
+__description__ = 'Universal Data Mapper'
 __url__ = 'https://www.frootlab.org/pandora'
 __organization__ = 'Frootlab'
 __author__ = 'Frootlab Developers'
 __email__ = 'contact@frootlab.org'
 __authors__ = ['Patrick Michl <patrick.michl@frootlab.org>']
 __maintainer__ = 'Patrick Michl'
-__credits__ = []
+__credits__ = ['']
 __docformat__ = 'google'

@@ -25,10 +25,10 @@ __email__ = 'contact@frootlab.org'
 __authors__ = ['Patrick Michl <patrick.michl@frootlab.org>']
 
 from typing import Any
-from flib.base import attrib
-from flib.errors import ConnectError, DisconnectError
-from flib.io import csv, ini
-from flib.io import FileRef, FileRefClassInfo
+from hup.base import attrib
+from hup.errors import ConnectError, DisconnectError
+from hup.io import csv, ini
+from hup.io import FileRef, FileRefClassInfo
 from pandb.core import table
 
 #
@@ -63,7 +63,7 @@ class Table(table.Proxy):
         Args:
             file:
             *args: Additional arguments, that are passed to
-                :class:`csv.File <flib.base.io.csv.File>`.
+                :class:`csv.File <hup.base.io.csv.File>`.
             **kwds: Additional keyword arguments, that are passed to csv.File.
 
         """

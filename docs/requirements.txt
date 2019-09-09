@@ -2,5 +2,5 @@ numpy>=1.15
 SQLAlchemy>=1.2.17
 appdirs>=1.4.1
 pyparsing>=2.2
-flib>=0.9
+hup>=0.9
 sphinx-bootstrap-theme>=0.6.5

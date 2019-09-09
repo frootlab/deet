@@ -26,10 +26,10 @@ __authors__ = ['Patrick Michl <patrick.michl@frootlab.org>']
 
 import types
 from typing import Any, NewType, Tuple, List, Optional, Iterator, Union
-from flib.base import abc, attrib, stype
-from flib.errors import RowLookupError, ProxyError, InvalidTypeError
-from flib.typing import check, StrList, StrTuple, OptOp, SeqOp, OptType
-from flib.typing import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
+from hup.base import abc, attrib, stype
+from hup.errors import RowLookupError, ProxyError, InvalidTypeError
+from hup.typing import check, StrList, StrTuple, OptOp, SeqOp, OptType
+from hup.typing import OptStrTuple, OptInt, OptStr, Mapping, OptMapping
 from pandb.core import record, cursor
 
 #
@@ -99,7 +99,7 @@ class Table(attrib.Group):
             This does not comprise metadata of the fields, which has to be
             included within the field declarations.
         parent: Reference to parent :class:`attribute group
-            <flib.base.attrib.Group>`, which is used for inheritance and
+            <hup.base.attrib.Group>`, which is used for inheritance and
             shared attributes. By default no parent is referenced.
 
     """
@@ -608,7 +608,7 @@ class Proxy(Table, abc.Proxy):
         proxy_mode: Optional Integer, that determines the operation mode of the
             proxy.
         parent: Reference to parent :class:`attribute group
-            <flib.base.attrib.Group>`, which is used for inheritance and
+            <hup.base.attrib.Group>`, which is used for inheritance and
             shared attributes. By default no parent is referenced.
 
     """

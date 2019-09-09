@@ -26,9 +26,9 @@ __authors__ = ['Patrick Michl <patrick.michl@frootlab.org>']
 
 import dataclasses
 from pandb.core import record
-from flib.typing import AnyOp
-from flib.base import test
-from flib.base.test import Case
+from hup.typing import AnyOp
+from hup.base import test
+from hup.base.test import Case
 
 #
 # Test Cases

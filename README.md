@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="https://github.com/frootlab/pandora">
-    <img src="https://bit.ly/2O2V8Je">
+  <a href="https://www.frootlab.org/pandora">
+    <img src="https://www.frootlab.org/images/fig/pandora.svg">
   </a><br>
 </div>
 
@@ -33,10 +33,10 @@ storage manager and real-time encryption. This allows the data analysis
 application to integrate a variety of different data sources, by using a unified
 data interface (and SQL dialect).
 
-Pandora is [open source](https://github.com/frootlab/pandora), based on the
+Pandora is open source, based on the
 [Python](https://www.python.org/) programming language and actively developed as
-part of the [Smart Analytics](https://github.com/orgs/frootlab/projects) project
-at [Frootlab](https://github.com/frootlab). Pandora is developed as a generic
+part of the [Liquid Code](https://www.frootlab.org/liquid) framework
+at [Frootlab](https://www.frootlab.org). Pandora is developed as a generic
 data interface, which can be integrated into data analysis applications, to
 facilitate the integration of data.
 

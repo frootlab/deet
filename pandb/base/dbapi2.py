@@ -47,8 +47,8 @@ __authors__ = ['Patrick Michl <patrick.michl@frootlab.org>']
 
 from typing import Any
 from abc import ABC, abstractmethod
-from flib.base import attrib, errors
-from flib.typing import OptList, OptInt, OptBool
+from hup.base import attrib, errors
+from hup.typing import OptList, OptInt, OptBool
 
 #
 # DB-API 2.0 Exceptions

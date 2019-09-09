@@ -25,10 +25,10 @@ __email__ = 'contact@frootlab.org'
 __authors__ = ['Patrick Michl <patrick.michl@frootlab.org>']
 
 from typing import Any
-from flib.base import pkg
+from hup.base import pkg
 from pandb.core import table
-from flib.errors import ConnectError
-from flib.typing import Module
+from hup.errors import ConnectError
+from hup.typing import Module
 
 #
 # Constructors
