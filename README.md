@@ -33,7 +33,7 @@ data interface (and SQL dialect).
 
 Deet is open source, based on the
 [Python](https://www.python.org/) programming language and actively developed as
-part of the [Liquid Code](https://www.frootlab.org/liquid) framework
+part of the [Vivid Code](https://www.frootlab.org/vivid) framework
 at [Frootlab](https://www.frootlab.org). Deet is developed as a generic
 data interface, which can be integrated into data analysis applications, to
 facilitate the integration of data.
