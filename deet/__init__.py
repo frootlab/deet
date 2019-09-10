@@ -2,7 +2,7 @@
 #
 # Copyright (C) 2019 Frootlab
 #
-# This file is part of Deet, https://www.frootlab.org/deet
+# This file is part of Frootlab Deet, https://www.frootlab.org/deet
 #
 #  Deet is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
@@ -15,7 +15,7 @@
 #  You should have received a copy of the GNU General Public License along with
 #  Deet. If not, see <http://www.gnu.org/licenses/>.
 #
-"""Deet database engine.
+"""Deet.
 
 *Deet* is a universal data mapper and SQL-Database engine, that implements
 high-performance and security requirements for enterprise analytical

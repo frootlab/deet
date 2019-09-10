@@ -3,7 +3,7 @@
 #
 # Copyright (C) 2019 Frootlab
 #
-# This file is part of Deet, https://www.frootlab.org/deet
+# This file is part of Frootlab Deet, https://www.frootlab.org/deet
 #
 #  Deet is free software: you can redistribute it and/or modify it under the
 #  terms of the GNU General Public License as published by the Free Software
