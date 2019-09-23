@@ -1,17 +1,20 @@
 <div align="center">
-  <img src="https://www.frootlab.org/images/fig/deet.svg" width=350px>
+  <figure>
+    <img src="https://www.frootlab.org/images/fig/deet.svg" width=350px
+      alt="Vivid DB: Universal Data Mapper">
+  </figure>
 </div>
 
-Deet
-=======
+Vivid DB
+========
 
 [![Building Status](https://travis-ci.org/frootlab/deet.svg?branch=master)](https://travis-ci.org/frootlab/deet)
 [![Documentation Status](https://readthedocs.org/projects/deet/badge/?version=latest)](https://deet.readthedocs.io/en/latest/?badge=latest)
 [![PIP Version](https://badge.fury.io/py/deet.svg)](https://badge.fury.io/py/deet)
 
-*Deet* is a universal data mapper and SQL-Database engine, that implements
-high-performance and security requirements for large-scale enterprise analytical
-applications.
+*Vivid DB* (alias *Deet*) is a universal data mapper and SQL-Database engine, that
+implements high-performance and security requirements for large-scale enterprise
+analytical applications.
 
 The primary goal of Deet is to separate data integration and data analysis
 into independent tasks, by providing a universal data interface for machine
@@ -33,10 +36,8 @@ data interface (and SQL dialect).
 
 Deet is open source, based on the
 [Python](https://www.python.org/) programming language and actively developed as
-part of the [Vivid Code](https://www.frootlab.org/vivid) framework
-at [Frootlab](https://www.frootlab.org). Deet is developed as a generic
-data interface, which can be integrated into data analysis applications, to
-facilitate the integration of data.
+a component of the [Vivid Code](https://www.frootlab.org/vivid) framework
+at [Frootlab](https://www.frootlab.org).
 
 Current Development Status
 --------------------------
@@ -56,6 +57,10 @@ a Python environment configured on your computer, you can install the latest
 distributed version by using pip:
 
     $ pip install deet
+
+Or alternatively:
+
+    $ pip install vivid-db
 
 Documentation
 -------------
@@ -82,6 +87,5 @@ License
 Deet is [open source](https://github.com/frootlab/deet) and available free
 for any use under the [GPLv3 license](https://www.gnu.org/licenses/gpl.html):
 
-    © 2019 Frootlab Developers:
-      Patrick Michl <patrick.michl@frootlab.org>
+    © 2019 The Frootlab Organization
     © 2018-2019 Patrick Michl
